@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { COLORS } from '../../utils/theme';
+import { COLORS } from '../../theme/theme';
 import Home from '../home/Home';
-import Home2 from '../home/Home2';
+import Home2 from '../explore/Home2';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 
