@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rnboilerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnboilerTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-rnboiler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-rnboiler.a */; };
+		11EDCECEEFF645199D9395CB /* HomeActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-rnboiler-rnboilerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnboiler-rnboilerTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		11EDCECEEFF645199D9395CB /* HomeActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */; };
-		973C6D30BB6249A3BFF607F2 /* HomeInActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = 611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */; };
-		E26DEF9E320347708453FFF9 /* ImagesData.ts in Resources */ = {isa = PBXBuildFile; fileRef = ED13784A46D64A668BC83037 /* ImagesData.ts */; };
+		1A293C7EEDDF4AD0914A3CFA /* LangTamil.ts in Resources */ = {isa = PBXBuildFile; fileRef = 5BC4944A4C144859A8DA2071 /* LangTamil.ts */; };
 		2A1FDFA3786A4458B8E7886E /* MaterialsActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = 22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */; };
 		35B2C50224874914A1BF59DD /* MaterialsInActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */; };
-		F0A074729D6C45BF91407211 /* LangEnglish.ts in Resources */ = {isa = PBXBuildFile; fileRef = 0B7C3F49BE2445B98C830447 /* LangEnglish.ts */; };
-		1A293C7EEDDF4AD0914A3CFA /* LangTamil.ts in Resources */ = {isa = PBXBuildFile; fileRef = 5BC4944A4C144859A8DA2071 /* LangTamil.ts */; };
+		7699B88040F8A987B510C191 /* libPods-rnboiler-rnboilerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnboiler-rnboilerTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		973C6D30BB6249A3BFF607F2 /* HomeInActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = 611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */; };
+		B2435D434E3BE06E5547BB75 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7750F8AFCB82CC001852D122 /* PrivacyInfo.xcprivacy */; };
+		E26DEF9E320347708453FFF9 /* ImagesData.ts in Resources */ = {isa = PBXBuildFile; fileRef = ED13784A46D64A668BC83037 /* ImagesData.ts */; };
 		ECEDEBB120B84A3B86CFA97C /* LangTypes.ts in Resources */ = {isa = PBXBuildFile; fileRef = 25A935FAD8334EE79F8F334B /* LangTypes.ts */; };
+		F0A074729D6C45BF91407211 /* LangEnglish.ts in Resources */ = {isa = PBXBuildFile; fileRef = 0B7C3F49BE2445B98C830447 /* LangEnglish.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		00E356EE1AD99517003FC87E /* rnboilerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnboilerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnboilerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnboilerTests.m; sourceTree = "<group>"; };
+		0B7C3F49BE2445B98C830447 /* LangEnglish.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LangEnglish.ts; path = ../src/assets/lang/English/LangEnglish.ts; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* rnboiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnboiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnboiler/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = rnboiler/AppDelegate.mm; sourceTree = "<group>"; };
@@ -46,21 +48,21 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnboiler/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = rnboiler/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnboiler-rnboilerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnboiler-rnboilerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialsActiveSvg.tsx; path = ../src/assets/images/BottomTabIcons/MaterialsActiveSvg.tsx; sourceTree = "<group>"; };
+		25A935FAD8334EE79F8F334B /* LangTypes.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LangTypes.ts; path = ../src/assets/lang/types/LangTypes.ts; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnboiler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnboiler.debug.xcconfig"; path = "Target Support Files/Pods-rnboiler/Pods-rnboiler.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnboiler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnboiler.release.xcconfig"; path = "Target Support Files/Pods-rnboiler/Pods-rnboiler.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnboiler-rnboilerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnboiler-rnboilerTests.debug.xcconfig"; path = "Target Support Files/Pods-rnboiler-rnboilerTests/Pods-rnboiler-rnboilerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BC4944A4C144859A8DA2071 /* LangTamil.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LangTamil.ts; path = ../src/assets/lang/Tamil/LangTamil.ts; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rnboiler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnboiler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = HomeInActiveSvg.tsx; path = ../src/assets/images/BottomTabIcons/HomeInActiveSvg.tsx; sourceTree = "<group>"; };
+		7750F8AFCB82CC001852D122 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = rnboiler/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnboiler/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnboiler-rnboilerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnboiler-rnboilerTests.release.xcconfig"; path = "Target Support Files/Pods-rnboiler-rnboilerTests/Pods-rnboiler-rnboilerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialsInActiveSvg.tsx; path = ../src/assets/images/BottomTabIcons/MaterialsInActiveSvg.tsx; sourceTree = "<group>"; };
+		E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = HomeActiveSvg.tsx; path = ../src/assets/images/BottomTabIcons/HomeActiveSvg.tsx; sourceTree = "<group>"; };
+		ED13784A46D64A668BC83037 /* ImagesData.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = ImagesData.ts; path = ../src/assets/images/BottomTabIcons/ImagesData.ts; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */ = {isa = PBXFileReference; name = "HomeActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/HomeActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */ = {isa = PBXFileReference; name = "HomeInActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/HomeInActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ED13784A46D64A668BC83037 /* ImagesData.ts */ = {isa = PBXFileReference; name = "ImagesData.ts"; path = "../src/assets/images/BottomTabIcons/ImagesData.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */ = {isa = PBXFileReference; name = "MaterialsActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/MaterialsActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */ = {isa = PBXFileReference; name = "MaterialsInActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/MaterialsInActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0B7C3F49BE2445B98C830447 /* LangEnglish.ts */ = {isa = PBXFileReference; name = "LangEnglish.ts"; path = "../src/assets/lang/English/LangEnglish.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5BC4944A4C144859A8DA2071 /* LangTamil.ts */ = {isa = PBXFileReference; name = "LangTamil.ts"; path = "../src/assets/lang/Tamil/LangTamil.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		25A935FAD8334EE79F8F334B /* LangTypes.ts */ = {isa = PBXFileReference; name = "LangTypes.ts"; path = "../src/assets/lang/types/LangTypes.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				7750F8AFCB82CC001852D122 /* PrivacyInfo.xcprivacy */,
 			);
 			name = rnboiler;
 			sourceTree = "<group>";
@@ -156,19 +159,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-rnboiler.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-rnboiler.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-rnboiler-rnboilerTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-rnboiler-rnboilerTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9A5AFAD3BC7E45E48FC8C382 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */,
 				611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */,
@@ -180,8 +172,19 @@
 				25A935FAD8334EE79F8F334B /* LangTypes.ts */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-rnboiler.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-rnboiler.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-rnboiler-rnboilerTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-rnboiler-rnboilerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -286,6 +289,7 @@
 				F0A074729D6C45BF91407211 /* LangEnglish.ts in Resources */,
 				1A293C7EEDDF4AD0914A3CFA /* LangTamil.ts in Resources */,
 				ECEDEBB120B84A3B86CFA97C /* LangTypes.ts in Resources */,
+				B2435D434E3BE06E5547BB75 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -585,6 +590,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -604,6 +610,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -623,7 +631,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -631,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -658,6 +674,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -670,6 +687,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -688,7 +707,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
