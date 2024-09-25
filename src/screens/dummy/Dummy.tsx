@@ -17,19 +17,19 @@ const TabIcon = ({name, focused}: {name: string, focused: boolean}) => (
 
 const Dummy = () => {
   return (
-    <Tab.Navigator screenOptions={{
-        headerShown: false,
-        tabBarHideOnKeyboard: true,
-        tabBarShowLabel: false,
-        tabBarStyle: styles.tabBarStyle,
-        }}>
-        <Tab.Screen name="Home" component={Home} options={{
-            tabBarIcon: ({ focused }) => <TabIcon name="home" focused={focused} />,
-        }}/>
-        <Tab.Screen name="Cart" component={Home2} options={{
-            tabBarIcon: ({ focused }) => <TabIcon name="cart" focused={focused} />,
-        }}/>
-    </Tab.Navigator>
+        <Tab.Navigator screenOptions={{
+            headerShown: false,
+            tabBarHideOnKeyboard: true,
+            tabBarShowLabel: false,
+            tabBarStyle: styles.tabBarStyle,
+            }}>
+            <Tab.Screen name="Home" component={Home} options={{
+                tabBarIcon: ({ focused }) => <TabIcon name="home" focused={focused} />,
+            }}/>
+            <Tab.Screen name="Home2" component={Home2} options={{
+                tabBarIcon: ({ focused }) => <TabIcon name="cart" focused={focused} />,
+            }}/>
+        </Tab.Navigator>
   );
 };
 

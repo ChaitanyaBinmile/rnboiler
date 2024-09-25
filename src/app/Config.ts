@@ -16,7 +16,7 @@ const Config = {
   appEnv: ENVIRONMENT,
   apiHost: RNConfig.API_HOST,
   versionName: RNConfig.ANDROID_VERSION_NAME as string,
-  useInterceptor: RNConfig.USE_INTERCEPTOR === 'true',
+  useInterceptor: true,
   logErrors: RNConfig.LOG_ERRORS === 'true', // Log errors in crashlytics
   remoteConfigPrefix: RNConfig.REMOTE_CONFIG_PREFIX,
   trackerVersion: TRACKER_VERSION,
