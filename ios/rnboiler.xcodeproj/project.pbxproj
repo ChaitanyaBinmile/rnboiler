@@ -14,6 +14,14 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rnboiler-rnboilerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnboiler-rnboilerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		11EDCECEEFF645199D9395CB /* HomeActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */; };
+		973C6D30BB6249A3BFF607F2 /* HomeInActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = 611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */; };
+		E26DEF9E320347708453FFF9 /* ImagesData.ts in Resources */ = {isa = PBXBuildFile; fileRef = ED13784A46D64A668BC83037 /* ImagesData.ts */; };
+		2A1FDFA3786A4458B8E7886E /* MaterialsActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = 22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */; };
+		35B2C50224874914A1BF59DD /* MaterialsInActiveSvg.tsx in Resources */ = {isa = PBXBuildFile; fileRef = CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */; };
+		F0A074729D6C45BF91407211 /* LangEnglish.ts in Resources */ = {isa = PBXBuildFile; fileRef = 0B7C3F49BE2445B98C830447 /* LangEnglish.ts */; };
+		1A293C7EEDDF4AD0914A3CFA /* LangTamil.ts in Resources */ = {isa = PBXBuildFile; fileRef = 5BC4944A4C144859A8DA2071 /* LangTamil.ts */; };
+		ECEDEBB120B84A3B86CFA97C /* LangTypes.ts in Resources */ = {isa = PBXBuildFile; fileRef = 25A935FAD8334EE79F8F334B /* LangTypes.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnboiler/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnboiler-rnboilerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnboiler-rnboilerTests.release.xcconfig"; path = "Target Support Files/Pods-rnboiler-rnboilerTests/Pods-rnboiler-rnboilerTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */ = {isa = PBXFileReference; name = "HomeActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/HomeActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */ = {isa = PBXFileReference; name = "HomeInActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/HomeInActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED13784A46D64A668BC83037 /* ImagesData.ts */ = {isa = PBXFileReference; name = "ImagesData.ts"; path = "../src/assets/images/BottomTabIcons/ImagesData.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */ = {isa = PBXFileReference; name = "MaterialsActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/MaterialsActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */ = {isa = PBXFileReference; name = "MaterialsInActiveSvg.tsx"; path = "../src/assets/images/BottomTabIcons/MaterialsInActiveSvg.tsx"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B7C3F49BE2445B98C830447 /* LangEnglish.ts */ = {isa = PBXFileReference; name = "LangEnglish.ts"; path = "../src/assets/lang/English/LangEnglish.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5BC4944A4C144859A8DA2071 /* LangTamil.ts */ = {isa = PBXFileReference; name = "LangTamil.ts"; path = "../src/assets/lang/Tamil/LangTamil.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		25A935FAD8334EE79F8F334B /* LangTypes.ts */ = {isa = PBXFileReference; name = "LangTypes.ts"; path = "../src/assets/lang/types/LangTypes.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +140,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9A5AFAD3BC7E45E48FC8C382 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +166,22 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		9A5AFAD3BC7E45E48FC8C382 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E8A068A0B5D34345B7E56806 /* HomeActiveSvg.tsx */,
+				611765B073CA42938A1AA6FB /* HomeInActiveSvg.tsx */,
+				ED13784A46D64A668BC83037 /* ImagesData.ts */,
+				22998D0696E64F1CAC584335 /* MaterialsActiveSvg.tsx */,
+				CEF5E4DD1E694CA68434384D /* MaterialsInActiveSvg.tsx */,
+				0B7C3F49BE2445B98C830447 /* LangEnglish.ts */,
+				5BC4944A4C144859A8DA2071 /* LangTamil.ts */,
+				25A935FAD8334EE79F8F334B /* LangTypes.ts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +278,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				11EDCECEEFF645199D9395CB /* HomeActiveSvg.tsx in Resources */,
+				973C6D30BB6249A3BFF607F2 /* HomeInActiveSvg.tsx in Resources */,
+				E26DEF9E320347708453FFF9 /* ImagesData.ts in Resources */,
+				2A1FDFA3786A4458B8E7886E /* MaterialsActiveSvg.tsx in Resources */,
+				35B2C50224874914A1BF59DD /* MaterialsInActiveSvg.tsx in Resources */,
+				F0A074729D6C45BF91407211 /* LangEnglish.ts in Resources */,
+				1A293C7EEDDF4AD0914A3CFA /* LangTamil.ts in Resources */,
+				ECEDEBB120B84A3B86CFA97C /* LangTypes.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

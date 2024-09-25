@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
 import { LocalizationProvider } from './src/utils/CommonContext/LocalizationProvider';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -16,10 +9,7 @@ import { ScreenNetworkLogger } from './src/customInterceptor/ScreenNetworkLogger
 
 const Stack = createNativeStackNavigator();
 
-
 function App(): React.JSX.Element {
-
-
   return (
     <LocalizationProvider>
       <NavigationContainer>

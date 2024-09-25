@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/images/BottomTabIcons/HomeActiveSvg.tsx",
+      "sha1": "3bb94887c4a9333fde705a6ea5d5ed041f29b200"
+    },
+    {
+      "path": "src/assets/images/BottomTabIcons/HomeInActiveSvg.tsx",
+      "sha1": "2b5701ad8cd139e7a08ffc7c5d01a2feb33715ca"
+    },
+    {
+      "path": "src/assets/images/BottomTabIcons/ImagesData.ts",
+      "sha1": "afb9d2e2a31b60de92132685c5b3fe2cd7130384"
+    },
+    {
+      "path": "src/assets/images/BottomTabIcons/MaterialsActiveSvg.tsx",
+      "sha1": "7d75f6036953c22a76d0a7e7ad3d132602c0cbc6"
+    },
+    {
+      "path": "src/assets/images/BottomTabIcons/MaterialsInActiveSvg.tsx",
+      "sha1": "269341d9209d3d229c2b41e94d84fc5b4a22e7c3"
+    },
+    {
+      "path": "src/assets/lang/English/LangEnglish.ts",
+      "sha1": "f6aacb77c55891a4a7ce149eb7fac4a54646ae9e"
+    },
+    {
+      "path": "src/assets/lang/Tamil/LangTamil.ts",
+      "sha1": "b71bc61fe4fb5361ae3e13abb9fdb34e9e248c99"
+    },
+    {
+      "path": "src/assets/lang/types/LangTypes.ts",
+      "sha1": "52a72c27efd2a1e16c8cfffb41cf40a9fa6c3787"
+    }
+  ]
+}

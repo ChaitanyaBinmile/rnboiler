@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, SafeAreaView } from 'react-native';
 
-const Home2 = () => {
+const Explore = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home2;
+export default Explore;

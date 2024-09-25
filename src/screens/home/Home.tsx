@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, SafeAreaView } from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const Home = () => {
   return (
