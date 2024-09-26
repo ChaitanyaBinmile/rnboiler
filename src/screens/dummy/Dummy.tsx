@@ -6,6 +6,7 @@ import Home from '../home/Home';
 import Home2 from '../explore/Home2';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
+import CheckoutScreen from '../checkout/CheckoutScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,10 +32,10 @@ const Dummy = () => {
             }
           />
         ),
-      }}></Tab.Screen>
+      }} />
     <Tab.Screen
       name="Home2"
-      component={Home2}
+      component={CheckoutScreen}
       options={{
         tabBarIcon: ({focused}) => (
           <Entypo
@@ -45,7 +46,7 @@ const Dummy = () => {
             }
           />
         ),
-      }}></Tab.Screen>
+      }} />
         </Tab.Navigator>
   );
 };

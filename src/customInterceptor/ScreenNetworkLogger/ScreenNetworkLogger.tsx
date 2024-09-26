@@ -5,7 +5,7 @@ import styles from './StyleScreenNetworkLogger';
 import { Routes } from '../../routes/Routes';
 
 
-export const ScreenNetworkLogger = ({navigation}) => {
+export const ScreenNetworkLogger = ({navigation} : any) => {
   return (
       <SafeAreaView style={styles.container}>
           <NetworkLogger />
