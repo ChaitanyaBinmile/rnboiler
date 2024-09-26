@@ -1,19 +1,14 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { COLORS } from '../../utils/theme';
+import { COLORS } from '../../theme/theme';
 import Home from '../home/Home';
-import CustomIcon from '../../common/CustomIcon';
-import Home2 from '../home/Home2';
+import Home2 from '../explore/Home2';
+import HomeActiveSvg from '../../assets/images/BottomTabIcons/HomeActiveSvg';
+import MaterialsActiveSvg from '../../assets/images/BottomTabIcons/MaterialsActiveSvg';
 
 const Tab = createBottomTabNavigator();
-const TabIcon = ({name, focused}: {name: string, focused: boolean}) => (
-    <CustomIcon
-        name={name}
-        size={25}
-        color={focused ? COLORS.primaryBlackRGBA : COLORS.secondaryLightGreyHex}
-    />
-  );
+
 
 const Dummy = () => {
   return (
@@ -23,12 +18,26 @@ const Dummy = () => {
             tabBarShowLabel: false,
             tabBarStyle: styles.tabBarStyle,
             }}>
-            <Tab.Screen name="Home" component={Home} options={{
-                tabBarIcon: ({ focused }) => <TabIcon name="home" focused={focused} />,
-            }}/>
-            <Tab.Screen name="Home2" component={Home2} options={{
-                tabBarIcon: ({ focused }) => <TabIcon name="cart" focused={focused} />,
-            }}/>
+            <Tab.Screen
+      name="Home"
+      component={Home}
+      options={{
+        tabBarIcon: ({focused}) => (
+         <HomeActiveSvg
+          color={focused ? COLORS.primaryBlackHex : COLORS.primaryBlackRGBA}
+         />
+        ),
+      }}></Tab.Screen>
+    <Tab.Screen
+      name="Home2"
+      component={Home2}
+      options={{
+        tabBarIcon: ({focused}) => (
+          <MaterialsActiveSvg
+          color={focused ? COLORS.primaryBlackHex : COLORS.primaryBlackRGBA}
+          />
+        ),
+      }}></Tab.Screen>
         </Tab.Navigator>
   );
 };
