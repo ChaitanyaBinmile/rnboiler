@@ -4,8 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { COLORS } from '../../theme/theme';
 import Home from '../home/Home';
 import Home2 from '../explore/Home2';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import Entypo from 'react-native-vector-icons/Entypo';
+import HomeActiveSvg from '../../assets/images/BottomTabIcons/HomeActiveSvg';
+import MaterialsActiveSvg from '../../assets/images/BottomTabIcons/MaterialsActiveSvg';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,13 +23,9 @@ const Dummy = () => {
       component={Home}
       options={{
         tabBarIcon: ({focused}) => (
-         <AntDesign
-            name="home"
-            size={25}
-            color={
-              focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-            }
-          />
+         <HomeActiveSvg
+          color={focused ? COLORS.primaryBlackHex : COLORS.primaryBlackRGBA}
+         />
         ),
       }}></Tab.Screen>
     <Tab.Screen
@@ -37,12 +33,8 @@ const Dummy = () => {
       component={Home2}
       options={{
         tabBarIcon: ({focused}) => (
-          <Entypo
-            name="bell"
-            size={25}
-            color={
-              focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
-            }
+          <MaterialsActiveSvg
+          color={focused ? COLORS.primaryBlackHex : COLORS.primaryBlackRGBA}
           />
         ),
       }}></Tab.Screen>
