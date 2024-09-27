@@ -44,9 +44,6 @@ const styles = StyleSheet.create({
       left: '10%',
     },
     customInput: {
-      borderColor: '#040607FF',
-      borderWidth: 1,
-      borderRadius: 5,
     },
     customError: {
       color: 'red',

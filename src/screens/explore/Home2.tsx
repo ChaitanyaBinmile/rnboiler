@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {SafeAreaView} from 'react-native';
 import styles from './StylesHome2';
 import CustomTextField from '../../common/CustomTextField/CustomTextField';
+import HomeInActiveSvg from '../../assets/images/BottomTabIcons/HomeInActiveSvg';
 
 const Home2 = () => {
   const [inputValue, setInputValue] = useState('');
@@ -72,9 +73,11 @@ const Home2 = () => {
         onFocus={() => console.log('Input focused')}
         onBlur={() => console.log('Input blurred')}
         multiline={true}
+        icon=<HomeInActiveSvg/>
+        // iconPosition='right'
         customContainerStyles={styles.customContainer}
         customInputStyles={styles.customInput}
-        // defaultValue="This is a default value"
+        defaultValue="This is a default value"
       />
       <CustomTextField
         label="Password"

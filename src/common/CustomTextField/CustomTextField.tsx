@@ -16,7 +16,7 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
   customInputStyles,
   customLabelStyles,
   customErrorStyles,
-  secureTextEntry = false, 
+  secureTextEntry = false,
   onFocus,
   onBlur,
   maxLength,
@@ -26,9 +26,18 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
 }) => {
   const [isFocused, setIsFocused] = useState(false);
 
+  
   const getInputStyle = (): ViewStyle => {
+    let borderColor = '#ccc'; 
+    if (errorMessage) {
+      borderColor = 'red'; 
+    } else if (isFocused) {
+      borderColor = '#333'; 
+    }
+
     return {
       ...styles.textInput,
+      borderColor, 
       ...customInputStyles,
     };
   };
@@ -40,21 +49,21 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
           {label} {required && <Text style={styles.required}>*</Text>}
         </Text>
       )}
-      <View style={styles.inputContainer}>
+      <View style={[styles.inputContainer, { borderColor: errorMessage ? 'red' : isFocused ? '#333' : '#ccc' }]}>
         {icon && iconPosition === 'left' && <View style={styles.icon}>{icon}</View>}
         <TextInput
           style={getInputStyle()}
-          value={value || defaultValue} 
+          value={value || defaultValue}
           onChangeText={onChangeText}
           placeholder={placeholder}
-          secureTextEntry={secureTextEntry} 
+          secureTextEntry={secureTextEntry}
           onFocus={() => {
             setIsFocused(true);
             if (onFocus) onFocus();
           }}
           onBlur={() => {
             setIsFocused(false);
-            if (onBlur) onBlur(); 
+            if (onBlur) onBlur();
           }}
           maxLength={maxLength}
           keyboardType={keyboardType}
