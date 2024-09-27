@@ -28,6 +28,31 @@ const styles = StyleSheet.create({
       fontSize: 16,
       color: '#333',
     },
+    emailInput: {
+      borderBottomWidth: 2,
+      borderBottomColor: '#000',
+      padding: 10,
+    },
+    labelStyle: {
+      fontWeight: 'bold',
+      fontSize: 32,
+      marginBottom: 5,
+    },
+    customContainer: {
+      marginBottom: 15,
+      width: '80%',
+      left: '10%',
+    },
+    customInput: {
+      borderColor: '#040607FF',
+      borderWidth: 1,
+      borderRadius: 5,
+    },
+    customError: {
+      color: 'red',
+      fontSize: 12,
+      fontWeight: 'bold',
+    },
   });
 
 export default styles;
