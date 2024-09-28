@@ -13,6 +13,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { NetworkLoggerProvider } from './src/networkLogger/NetworkProvider';
 import { Routes } from './src/routes/Routes';
 import { ScreenNetworkLogger } from './src/customInterceptor/ScreenNetworkLogger/ScreenNetworkLogger';
+import { Provider as PaperProvider } from 'react-native-paper';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +24,7 @@ function App(): React.JSX.Element {
 
   return (
     <LocalizationProvider>
+      <PaperProvider>
       <NavigationContainer>
         <NetworkLoggerProvider>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -38,6 +41,7 @@ function App(): React.JSX.Element {
           </Stack.Navigator>
         </NetworkLoggerProvider>
       </NavigationContainer>
+      </PaperProvider>
     </LocalizationProvider>
   );
 }
