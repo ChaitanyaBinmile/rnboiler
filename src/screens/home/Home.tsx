@@ -1,40 +1,96 @@
-import React, { useState } from 'react';
-import { SafeAreaView, Text, View, StyleSheet } from 'react-native';
-import CustomDropdown from '../../common/CustomDropDown/CustomDropDown';
+import React from 'react';
+import { SafeAreaView, Text, View, StyleSheet, Alert } from 'react-native';
+import CustomForm from '../../common/CustomForm/CustomForm'; 
+import { FormValidationSchema } from '../../common/CustomForm/validations/Validations'; 
+import HomeActiveSvg from '../../assets/images/BottomTabIcons/HomeActiveSvg';
+import MaterialsActiveSvg from '../../assets/images/BottomTabIcons/MaterialsActiveSvg';
 
-const MultiSelectExample = () => {
-  const [selectedValues, setSelectedValues] = useState<string[]>([]);
-
-  const multiSelectOptions = [
-    { label: 'Option 1', value: '1' },
-    { label: 'Option 2', value: '2' },
-    { label: 'Option 3', value: '3' },
-    { label: 'Option 4', value: '4' },
+const MultiSelectExample: React.FC = () => {
+  const formFields = [
+    {
+      name: 'email',
+      label: 'Email',
+      placeholder: 'Enter your email',
+      required: true,
+      customContainerStyles: { 
+        backgroundColor: '#fff',
+        borderRadius: 5, 
+        padding: 10 
+      },
+      customLabelStyles: { 
+        color: '#000' ,
+        fontSize: 16, 
+      },
+      customInputStyles: { 
+        padding: 10, 
+        borderColor: '#000' ,
+        color: '#000',
+        fontSize: 16,
+      } ,
+      keyboardType: 'email-address' as const,
+    },
+    {
+      name: 'password',
+      label: 'Password',
+      placeholder: 'Enter your password',
+      required: true,
+      // icon: <MaterialsActiveSvg />,
+      // iconPosition: 'left' as const,
+      customContainerStyles: { 
+        backgroundColor: '#fff', 
+        borderRadius: 5, 
+        padding: 10 
+      },
+      customLabelStyles: { 
+        color: '#000',
+        fontSize: 16, 
+      },
+      customInputStyles: { 
+        padding: 10, 
+        color: '#000',
+        fontSize: 16 
+      },
+      secureTextEntry: true,
+    },
+    {
+      name: 'confirmPassword',
+      label: 'Confirm Password',
+      placeholder: 'Confirm your password',
+      required: true,
+      icon: <HomeActiveSvg />,
+      iconPosition: 'left' as const,
+      customContainerStyles: { 
+        backgroundColor: '#fff', 
+        borderRadius: 5, 
+        padding: 10 
+      } ,
+      customLabelStyles: { 
+        color: '#000', 
+        fontSize: 16, 
+      } ,
+      customInputStyles: { 
+        padding: 10, 
+        color: '#000', 
+        fontSize: 16 
+      },
+      secureTextEntry: true,
+    },
   ];
 
-  const handleSelect = (value?: string | string[]) => {
-    if (Array.isArray(value)) {
-      setSelectedValues(value as string[]);
-      console.log('Selected values:', value);
-    } else {
-      console.log('Selected value:', value);
-    }
+  const handleFormSubmit = (data: any) => {
+    Alert.alert('Form Submitted!', JSON.stringify(data));
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{ padding: 20 }}>
-        <Text>Select multiple items:</Text>
-        <CustomDropdown
-          testID="multi-select-dropdown"
-          menuTestID="multi-select-menu"
-          value={selectedValues} 
-          onSelect={handleSelect} 
-          options={multiSelectOptions}
-          placeholder="Select options"
-          label="Multi Select"
-          mode="flat"
-          maxMenuHeight={200}
+      <Text style={styles.greetingText}>Hello</Text>
+      <View style={styles.formWrapper}>
+        <Text style={styles.title}>Register</Text>
+        <CustomForm
+          fields={formFields}
+          onSubmit={handleFormSubmit}
+          validationSchema={FormValidationSchema}
+          buttonLabel="Register"
         />
       </View>
     </SafeAreaView>
@@ -45,6 +101,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f8f8f8',
+    padding: 20,
+  },
+  greetingText: {
+    alignSelf: 'center',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: 20,
+  },
+  formWrapper: {
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
   },
 });
 
