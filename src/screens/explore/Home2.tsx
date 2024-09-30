@@ -1,49 +1,44 @@
 import React, { useState } from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 import { emailSchema } from '../../common/CustomTextField/Validations/ZodValidations';  
 import CustomTextField from '../../common/CustomTextField/CustomTextField';
 import HomeInActiveSvg from '../../assets/images/BottomTabIcons/HomeInActiveSvg';  
 import styles from './StylesHome2';
+import CustomAutoComplete from '../../common/CustomAutoComplete/CustomAutoComplete';
 
 const Home2 = () => {
-  const [emailValue, setEmailValue] = useState('');
-  const [emailError, setEmailError] = useState('');
 
-  const handleEmailValidation = (value: string) => {
-    const result = emailSchema.safeParse(value);
-    if (!result.success) {
-      setEmailError(result.error.errors[0].message);  
-    } else {
-      setEmailError(''); 
-    }
-  };
+
+  const [query, setQuery] = useState('');
+  const data = ['Apple', 'Banana', 'Orange', 'Grapes', 'Mango', 'Pineapple', 'Avocado'];
+
+  const filteredData = query
+    ? data.filter((item) =>
+        item.toLowerCase().includes(query.toLowerCase())
+      )
+    : [];
 
   return (
     <SafeAreaView style={styles.container}>
-      <CustomTextField
-        label="Email"
-        value={emailValue}
-        onChangeText={(text) => {
-          setEmailValue(text);
-          handleEmailValidation(text); 
+      <Text style={styles.title}>Custom AutoComplete Example</Text>
+      <CustomAutoComplete
+        inputContainerStyle={styles.inputContainer}
+        listStyle={styles.list}
+        hideResults={filteredData.length === 0} 
+        data={filteredData}
+        value={query}
+        onChangeText={setQuery}
+        placeholder="Type a fruit..."
+        flatListProps={{
+          keyExtractor: (item) => item,
+          renderItem: ({ item }) => (
+            <Text style={styles.listItem}>{item}</Text>
+          ),
         }}
-        placeholder="Enter your email"
-        maxLength={100}
-        keyboardType="email-address"
-        required={true}
-        errorMessage={emailError}  
-        onFocus={() => console.log('Email input focused')}
-        onBlur={() => {
-          // Perform validation on blur
-          handleEmailValidation(emailValue);
-          console.log('Email input blurred');
-        }}
-        multiline={false}
-        customContainerStyles={styles.customContainer}
-        customInputStyles={styles.customInput}
-        customLabelStyles={styles.labelStyle}
-        customErrorStyles={styles.customError}
-        icon={<HomeInActiveSvg />} 
+        onShowResults={(show) =>
+          console.log(show ? 'Results shown' : 'Results hidden')
+        }
+        onStartShouldSetResponderCapture={() => true}
       />
     </SafeAreaView>
   );

@@ -1,55 +1,40 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#f8f8f8', 
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#f5f5f5', 
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333', 
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  autoCompleteContainer: {
+    marginBottom: 20,
+  },
+  inputContainer: {
+    paddingHorizontal: 10,
+    paddingVertical: 8,
     },
-    content: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 16,
-    },
-    text: {
-      fontSize: 20,
-      color: '#333',
-      marginBottom: 20,
-    },
-    todoItem: {
-      padding: 10,
-      backgroundColor: '#fff',
-      borderBottomWidth: 1,
-      borderBottomColor: '#ccc',
-      width: '100%',
-      alignItems: 'center',
-    },
-    todoText: {
-      fontSize: 16,
-      color: '#333',
-    },
-    emailInput: {
-      borderBottomWidth: 2,
-      borderBottomColor: '#000',
-      padding: 10,
-    },
-    labelStyle: {
-      fontWeight: 'bold',
-      fontSize: 32,
-      marginBottom: 5,
-    },
-    customContainer: {
-      marginBottom: 15,
-      width: '80%',
-      left: '10%',
-    },
-    customInput: {
-    },
-    customError: {
-      color: 'red',
-      fontSize: 12,
-      fontWeight: 'bold',
-    },
-  });
+  list: {
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    maxHeight: 200, 
+    marginTop: 5,
+    
+  },
+  listItem: {
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderBottomWidth: 0.8,
+    borderBottomColor: '#eee',
+    color: '#000', 
+    fontSize: 16,
+  },
+});
 
 export default styles;
