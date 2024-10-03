@@ -3,12 +3,15 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   formContainer: {
     padding: 16,
-    flexGrow: 1,
-    justifyContent: 'center',
   },
   fieldContainer: {
     marginBottom: 16,
     width: '100%',
+  },
+  WrapperView:{
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    padding: 10,
   },
   label: {
     fontSize: 16,
@@ -20,11 +23,12 @@ const styles = StyleSheet.create({
     color: 'red',
   },
   inputWrapper: {
+    width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 6,
+    borderRadius: 8,
     paddingHorizontal: 8,
   },
   input: {

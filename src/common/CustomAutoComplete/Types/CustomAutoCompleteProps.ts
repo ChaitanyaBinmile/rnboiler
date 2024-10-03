@@ -12,5 +12,5 @@ export interface CustomAutoCompleteProps extends TextInputProps {
   renderTextInput?: (props: TextInputProps) => JSX.Element;
   flatListProps?: Partial<FlatListProps<any>>;
   renderResultList?: () => JSX.Element;
-  onSelect?: (item: any) => void; // Add onSelect prop here
+  onSelect?: (item: any) => void; 
 }

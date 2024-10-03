@@ -13,6 +13,7 @@ const CustomForm: React.FC<CustomFormProps> = ({ fields, onSubmit, buttonLabel =
 
   return (
     <ScrollView contentContainerStyle={styles.formContainer}>
+      <View style={styles.WrapperView}>
       {fields.map((field: FormField) => (
         <View key={field.name} style={[styles.fieldContainer, field.customContainerStyles]}>
           {field.label && (
@@ -56,6 +57,7 @@ const CustomForm: React.FC<CustomFormProps> = ({ fields, onSubmit, buttonLabel =
       <TouchableOpacity style={styles.submitButton} onPress={handleSubmit(onSubmit)}>
         <Text style={styles.submitButtonText}>{buttonLabel}</Text>
       </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
