@@ -28,13 +28,6 @@ const MultiSelectExample: React.FC = () => {
     console.log('Form Data:', data);
   };
 
-  const handleAddOption1 = (newOption: Option) => {
-    setOptions1(prevOptions => [...prevOptions, newOption]);
-  };
-
-  const handleAddOption2 = (newOption: Option) => {
-    setOptions2(prevOptions => [...prevOptions, newOption]);
-  };
 
   return (
     <View style={styles.container}>
@@ -53,7 +46,6 @@ const MultiSelectExample: React.FC = () => {
             required={true}
             multiple={true}
             clearable={true}
-            onAddOption={handleAddOption1}
             style={styles.dropdown}
             inputStyle={styles.input}
             dropdownStyle={styles.dropdownMenu}
@@ -75,9 +67,8 @@ const MultiSelectExample: React.FC = () => {
             label="Choose Options from Dropdown 2"
             error={errors.dropdownValue2?.message}
             required={true}
-            multiple={true}
+            multiple={false}
             clearable={true}
-            onAddOption={handleAddOption2}
             style={styles.dropdown}
             inputStyle={styles.input}
             dropdownStyle={styles.dropdownMenu}

@@ -1,4 +1,3 @@
-// Types/CustomFormProps.ts
 import { ViewStyle, TextStyle, TextInputProps } from 'react-native';
 import { ZodSchema } from 'zod';
 import { ReactNode } from 'react';
@@ -27,7 +26,7 @@ export interface FormField {
 
 export interface CustomFormProps {
   fields: FormField[];  
-  onSubmit: (data: any) => void;
+  onSubmit: (data: Record<string, string>) => void;  
   buttonLabel?: string;  
   validationSchema: ZodSchema; 
 }

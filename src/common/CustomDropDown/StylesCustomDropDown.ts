@@ -73,25 +73,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc',
     marginHorizontal: 10,
   },
-  addOptionContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 10,
-  },
-  AddButton: {
-    backgroundColor: '#1876d1',
-    padding: 8,
-    borderRadius: 20,
-  },
-  addOptionInput: {
-    flex: 1,
-    fontSize: 16,
-  },
-  addOptionButton: {
-    color: 'white',
-    fontWeight: 'bold',
-  },
-
 });
 
 export default styles;

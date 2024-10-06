@@ -16,7 +16,6 @@ export interface DropdownProps {
   disabled?: boolean;
   error?: string | undefined; 
   multiple?: boolean;
-  onAddOption?: (option: Option) => void;
   clearable?: boolean; 
   required?: boolean;
   style?: StyleProp<ViewStyle>;        

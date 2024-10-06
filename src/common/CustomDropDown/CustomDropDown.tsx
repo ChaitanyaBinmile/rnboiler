@@ -12,7 +12,6 @@ const CustomDropdown: React.FC<DropdownProps> = ({
   disabled,
   error,
   multiple = false,
-  onAddOption,
   clearable = false,
   required = false,
   style = {},
@@ -21,7 +20,6 @@ const CustomDropdown: React.FC<DropdownProps> = ({
   errorStyle = {},
 }) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [newOption, setNewOption] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const isMultiSelect = Array.isArray(value);
 
@@ -40,29 +38,6 @@ const CustomDropdown: React.FC<DropdownProps> = ({
     } else if (selectedValue) {
       onSelect?.(selectedValue);
       setDropdownVisible(false);
-    }
-  };
-
-  const handleAddOption = () => {
-    if (newOption.trim()) {
-      const doesOptionExist = options.some(option => option.value === newOption);
-
-      if (!doesOptionExist) {
-        const newOptionObject = { id: newOption, label: newOption, value: newOption }; // Use newOption for id for demonstration
-
-        if (onAddOption) {
-          onAddOption(newOptionObject); // Add the new option to the list
-        }
-
-        if (multiple && isMultiSelect) {
-          onSelect?.([...(value as string[]), newOption]);
-        } else {
-          onSelect?.(newOption);
-        }
-
-        setNewOption(''); // Clear input after adding
-        setDropdownVisible(false); // Close dropdown
-      }
     }
   };
 
@@ -113,7 +88,7 @@ const CustomDropdown: React.FC<DropdownProps> = ({
             data={options}
             keyExtractor={item => item.id} // Use id as key
             renderItem={({ item }) => (
-              <TouchableOpacity onPress={() => handleSelect(item.id)}> 
+              <TouchableOpacity onPress={() => handleSelect(item.id)}>
                 <Text
                   style={[
                     styles.dropdownItem,
@@ -126,19 +101,6 @@ const CustomDropdown: React.FC<DropdownProps> = ({
               </TouchableOpacity>
             )}
           />
-          {onAddOption && (
-            <View style={styles.addOptionContainer}>
-              <TextInput
-                value={newOption}
-                onChangeText={setNewOption}
-                placeholder="Add option"
-                style={styles.addOptionInput}
-              />
-              <TouchableOpacity onPress={handleAddOption} style={styles.AddButton}>
-                <Text style={styles.addOptionButton}>Add</Text>
-              </TouchableOpacity>
-            </View>
-          )}
         </View>
       )}
       {showError && <Text style={[styles.errorText, errorStyle]}>Error: {error}</Text>}
