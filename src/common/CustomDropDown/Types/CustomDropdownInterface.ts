@@ -1,23 +1,27 @@
+import { StyleProp, ViewStyle, TextStyle } from 'react-native';
+
 export interface Option {
+  id: string; 
   label: string;
   value: string;
 }
 
 export interface DropdownProps {
-  testID?: string;
-  menuTestID?: string;
-  value?: string | string[]; 
-  onSelect?: (value?: string | string[]) => void;
+  DropDownType?: string;
+  value?: string | string[];
+  onSelect?: (value: string | string[]) => void;
   options: Option[];
-  menuUpIcon?: JSX.Element;
-  menuDownIcon?: JSX.Element;
-  maxMenuHeight: number;
-  menuContentStyle?: object;
   placeholder: string;
   label: string;
-  mode: 'flat' | 'outlined';
   disabled?: boolean;
-  error?: boolean;
-  hideMenuHeader?: boolean;
-  statusBarHeight?: number;
+  error?: string | undefined; 
+  multiple?: boolean;
+  clearable?: boolean; 
+  required?: boolean;
+  style?: StyleProp<ViewStyle>;        
+  inputStyle?: StyleProp<TextStyle>;  
+  dropdownStyle?: StyleProp<ViewStyle>; 
+  errorStyle?: StyleProp<TextStyle>;   
+  onFocusStyle?: StyleProp<ViewStyle>; 
+  onBlurStyle?: StyleProp<ViewStyle>;  
 }
