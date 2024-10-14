@@ -6,7 +6,10 @@ import { RootState } from '../../services/redux/rootReducer/rootState';
 import styles from './StylesHome2';
 
 const Home2 = () => {
-
+  const dispatch=useDispatch()
+useEffect(()=>{
+dispatch(getTodo())
+},[])
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
