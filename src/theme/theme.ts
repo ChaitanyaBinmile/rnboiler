@@ -1,4 +1,4 @@
-import { heightPixel, widthPixel } from './Dimension';
+import { fontPixel, heightPixel, widthPixel } from './Dimension';
 
 interface Spacing {
     space_2: number;
@@ -104,16 +104,16 @@ interface Spacing {
   }
 
   export const FONTSIZE: FontSize = {
-    size_8: heightPixel(12.5),
-    size_10: heightPixel(14.5),
-    size_12: heightPixel(16.5),
-    size_14: heightPixel(18.5),
-    size_16: heightPixel(20.5),
-    size_18: heightPixel(22.5),
-    size_20: heightPixel(24.5),
-    size_24: heightPixel(28.5),
-    size_28: heightPixel(32.5),
-    size_30: heightPixel(34.5),
+    size_8: fontPixel(12.5),
+    size_10: fontPixel(14.5),
+    size_12: fontPixel(16.5),
+    size_14: fontPixel(18.5),
+    size_16: fontPixel(20.5),
+    size_18: fontPixel(22.5),
+    size_20: fontPixel(24.5),
+    size_24: fontPixel(28.5),
+    size_28: fontPixel(32.5),
+    size_30: fontPixel(34.5),
   };
 
   interface BorderRadius {

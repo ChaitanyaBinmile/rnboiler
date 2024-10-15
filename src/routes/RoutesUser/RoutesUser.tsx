@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Routes } from '../Routes';
-import Dummy from '../../screens/dummy/Dummy';
+import Dummy from '../../screens/dummy/ScreenDummy';
 import { UserProps, UserStackParamList } from '../types';
 
 const UserStack = createStackNavigator<UserStackParamList>();

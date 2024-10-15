@@ -2,10 +2,11 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { COLORS } from '../../theme/theme';
-import Home from '../home/Home';
-import Home2 from '../explore/Home2';
-import HomeActiveSvg from '../../assets/images/BottomTabIcons/HomeActiveSvg';
-import MaterialsActiveSvg from '../../assets/images/BottomTabIcons/MaterialsActiveSvg';
+import Home from '../home/ScreenHome';
+import Home2 from '../explore/ScreenHome2';
+import HomeActiveSvg from '../../assets/icons/BottomTabIcons/HomeActiveSvg';
+import MaterialsActiveSvg from '../../assets/icons/BottomTabIcons/MaterialsActiveSvg';
+import styles from './StylesDummy';
 
 const Tab = createBottomTabNavigator();
 
@@ -42,21 +43,4 @@ const Dummy = () => {
   );
 };
 
-const styles = StyleSheet.create({
-    tabBarStyle: {
-        height: 80,
-        position: 'absolute',
-        // backgroundColor: COLORS.primaryBlackRGBA,
-        borderTopWidth: 0,
-        elevation: 0,
-        // borderTopColor: COLORS.transparent,
-    },
-    BlurViewStyles:{
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-    },
-});
 export default Dummy;

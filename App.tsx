@@ -1,7 +1,7 @@
 import React from 'react';
 import { LocalizationProvider } from './src/utils/CommonContext/LocalizationProvider';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Dummy from './src/screens/dummy/Dummy';
+import Dummy from './src/screens/dummy/ScreenDummy';
 import { NavigationContainer } from '@react-navigation/native';
 import { NetworkLoggerProvider } from './src/networkLogger/NetworkProvider';
 import { Routes } from './src/routes/Routes';
