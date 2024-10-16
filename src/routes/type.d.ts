@@ -1,7 +1,8 @@
 import {ParamListBase} from '@react-navigation/native'
 export interface DrawerStackParamList extends ParamListBase{
 ScreenFirstDrawer: undefined,
-ScreenSecondDrawer: undefined
+ScreenSecondDrawer: undefined,
+HOMES: undefined,
 }
 export interface GuestStackParamList extends ParamListBase {
     ScreenLogIn: undefined;
@@ -10,7 +11,6 @@ export interface GuestStackParamList extends ParamListBase {
     BottomTabStack: undefined;
     ScreenNetworkLogger: undefined;
     ScreenBottomTab: undefined;
-    // DrawerRoute: 'ScreenDrawer',
   };
   
   export interface BottomTabParamList extends ParamListBase {
@@ -25,4 +25,4 @@ export interface GuestStackParamList extends ParamListBase {
   export type UserProps = {
     show: boolean;
   };
-  
+  export type NavigationType = NativeStackNavigationProp<UserStackParamList | GuestStackParamList>;

@@ -21,7 +21,7 @@ export const ButtonInterceptor: React.FC<ButtonInterceptorProps> = ({ show }) =>
       <TouchableOpacity
       activeOpacity={0.7}
       onPress={() => {
-        navigation.navigate(UserRoute.SCREEN_NETWORK_LOGGER as never);
+        navigation.navigate(UserRoute.ScreenNetworkLogger as never);
       }}
       style={styles.buttonStyle}>
           <View style={{ ...containerStyle, ...styles.containerStyle }}>

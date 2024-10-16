@@ -3,7 +3,7 @@ const UserRoute = {
   HOME2: 'Home2',
   TAB: 'Tab',
   ScreenBottomTab: 'ScreenBottomTab',
-  SCREEN_NETWORK_LOGGER: 'ScreenNetworkLogger',
+  ScreenNetworkLogger: 'ScreenNetworkLogger',
   RouteDrawer:'RouteDrawer'
 };
 export default UserRoute

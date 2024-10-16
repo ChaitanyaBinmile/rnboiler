@@ -4,7 +4,7 @@ import ComponentHeader from '../../commonComponents/ComponentHeader/ComponentHea
 import Icons from '../../assets/images/svgIcons/SvgData';
 import { DrawerActions, useNavigation } from '@react-navigation/native';
 
-const Home = () => {
+const ScreenHome = () => {
   const navigation=useNavigation()
   const handleDrawer=()=>{
     navigation.dispatch(DrawerActions.openDrawer())
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default ScreenHome;
