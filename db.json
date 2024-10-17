@@ -1,0 +1,84 @@
+{
+    "options": [
+      {
+        "id": "1",
+        "label": "The Shawshank Redemption",
+        "value": "the_shawshank_redemption"
+      },
+      {
+        "id": "2",
+        "label": "The Godfather",
+        "value": "the_godfather"
+      },
+      {
+        "id": "3",
+        "label": "The Dark Knight",
+        "value": "the_dark_knight"
+      },
+      {
+        "id": "4",
+        "label": "Pulp Fiction",
+        "value": "pulp_fiction"
+      },
+      {
+        "id": "5",
+        "label": "Forrest Gump",
+        "value": "forrest_gump"
+      },
+      {
+        "id": "6",
+        "label": "Inception",
+        "value": "inception"
+      },
+      {
+        "id": "7",
+        "label": "Fight Club",
+        "value": "fight_club"
+      },
+      {
+        "id": "8",
+        "label": "The Matrix",
+        "value": "the_matrix"
+      },
+      {
+        "id": "9",
+        "label": "Goodfellas",
+        "value": "goodfellas"
+      },
+      {
+        "id": "10",
+        "label": "The Lord of the Rings: The Return of the King",
+        "value": "the_lord_of_the_rings_return_of_the_king"
+      },
+      {
+        "id": "11",
+        "label": "Star Wars: Episode IV - A New Hope",
+        "value": "star_wars_a_new_hope"
+      },
+      {
+        "id": "12",
+        "label": "Jurassic Park",
+        "value": "jurassic_park"
+      },
+      {
+        "id": "13",
+        "label": "The Silence of the Lambs",
+        "value": "the_silence_of_the_lambs"
+      },
+      {
+        "id": "14",
+        "label": "Saving Private Ryan",
+        "value": "saving_private_ryan"
+      },
+      {
+        "id": "15",
+        "label": "The Social Network",
+        "value": "the_social_network"
+      },
+      {
+        "id": "16",
+        "label": "The Social Network 2",
+        "value": "the_social_network 2"
+      }
+    ]
+  }

@@ -6,6 +6,7 @@ import { NetworkLoggerProvider } from './src/networkLogger/NetworkProvider';
 import { ScreenNetworkLogger } from './src/customInterceptor/ScreenNetworkLogger/ScreenNetworkLogger';
 import { Provider } from 'react-redux';
 import store from './src/services/redux/store/store';  
+
 import UserRoute from './src/routes/RoutesUser/UserRouteName';
 import RouteManager from './src/routes/RouteManager';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -15,6 +16,7 @@ const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
   return (
+
     <SafeAreaProvider>
 
     <GestureHandlerRootView style={{flex:1}}>
@@ -43,6 +45,7 @@ function App(): React.JSX.Element {
     </Provider>
     </GestureHandlerRootView>
     </SafeAreaProvider>
+
   );
 }
 
