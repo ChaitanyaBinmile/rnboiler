@@ -1,52 +1,51 @@
 import React from 'react';
 import { LocalizationProvider } from './src/utils/CommonContext/LocalizationProvider';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Dummy from './src/screens/dummy/Dummy';
 import { NavigationContainer } from '@react-navigation/native';
 import { NetworkLoggerProvider } from './src/networkLogger/NetworkProvider';
-import { Routes } from './src/routes/Routes';
 import { ScreenNetworkLogger } from './src/customInterceptor/ScreenNetworkLogger/ScreenNetworkLogger';
 import { Provider } from 'react-redux';
 import store from './src/services/redux/store/store';  
-import { View } from 'react-native';
-import ScreenCheckBox from './src/screens/ScreenCheckbox/ScreenCheckbox';
-import ScreenDropdown from './src/screens/ScreenDropDown/ScreenDropDown';
-import ScreenForm from './src/screens/ScreenForm/ScreenForm';
-import ScreenAutoComplete from './src/screens/ScreenAutoComplete/ScreenAutoComplete';
-import ScreenRadioButtons from './src/screens/ScreenRadio/ScreenRadioButtons';
+
+import UserRoute from './src/routes/RoutesUser/UserRouteName';
+import RouteManager from './src/routes/RouteManager';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createNativeStackNavigator();
 
 function App(): React.JSX.Element {
   return (
-    // <Provider store={store}> 
-    //   <LocalizationProvider>
-    //     <NavigationContainer>
-    //       <NetworkLoggerProvider>
-    //         <Stack.Navigator screenOptions={{ headerShown: false }}>
-    //           <Stack.Screen
-    //             name={Routes.TAB}
-    //             component={Dummy}
-    //             options={{ animation: 'slide_from_bottom' }}
-    //           />
-    //           <Stack.Screen
-    //             name={Routes.SCREEN_NETWORK_LOGGER}
-    //             component={ScreenNetworkLogger}
-    //             options={{ animation: 'slide_from_bottom' }}
-    //           />
-    //         </Stack.Navigator>
-    //       </NetworkLoggerProvider>
-    //     </NavigationContainer>
-    //   </LocalizationProvider>
-    // </Provider>
-    <View style={{flex:1}}>
-      {/* <ScreenCheckBox/> */}
-      {/* <ScreenDropdown/> */}
-      <ScreenForm/>
-      {/* <ScreenAutoComplete/> */}
-      {/* <ScreenRadioButtons/> */}
-      {/* <ScreenAutoComplete/> */}
-    </View>
+
+    <SafeAreaProvider>
+
+    <GestureHandlerRootView style={{flex:1}}>
+
+    <Provider store={store}> 
+      <LocalizationProvider>
+        <NavigationContainer>
+          <NetworkLoggerProvider>
+
+            {/* <Stack.Navigator screenOptions={{ headerShown: false }}>
+              <Stack.Screen
+                name={UserRoute.TAB}
+                component={Dummy}
+                options={{ animation: 'slide_from_bottom' }}
+              />
+              <Stack.Screen
+                name={UserRoute.SCREEN_NETWORK_LOGGER}
+                component={ScreenNetworkLogger}
+                options={{ animation: 'slide_from_bottom' }}
+              />
+            </Stack.Navigator> */}
+            <RouteManager/>
+          </NetworkLoggerProvider>
+        </NavigationContainer>
+      </LocalizationProvider>
+    </Provider>
+    </GestureHandlerRootView>
+    </SafeAreaProvider>
+
   );
 }
 

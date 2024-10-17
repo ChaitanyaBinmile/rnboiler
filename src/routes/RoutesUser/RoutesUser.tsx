@@ -1,23 +1,33 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Routes } from '../Routes';
-import Dummy from '../../screens/dummy/Dummy';
-import { UserProps, UserStackParamList } from '../types';
+import {UserProps, UserStackParamList} from '../type';
+import RouteDrawer from '../RouteDrawer/RouteDrawer';
+import UserRoute from './UserRouteName';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import ScreenHome from '../../screens/ScreenHome/ScreenHome';
+import {ScreenNetworkLogger} from '../../customInterceptor/ScreenNetworkLogger/ScreenNetworkLogger';
+import BottomTabs from '../RouteTabs/BottomTabs';
 
-const UserStack = createStackNavigator<UserStackParamList>();
+const UserStack = createNativeStackNavigator<UserStackParamList>();
 
-function RoutesUser({ show }: UserProps) {
+function RoutesUser({show}: UserProps) {
   if (!show) return null;
   return (
-      <UserStack.Navigator
+    <UserStack.Navigator
+    initialRouteName={UserRoute.RouteDrawer}
       screenOptions={{
         headerShown: false,
       }}>
-          <UserStack.Screen
-        name={Routes.SCREEN_BOTTOM_TAB as keyof UserStackParamList}
-        component={Dummy}
+      <UserStack.Screen
+        name={UserRoute.ScreenBottomTab}
+        component={BottomTabs}
       />
-      </UserStack.Navigator>
+      <UserStack.Screen name={UserRoute.RouteDrawer} component={RouteDrawer} />
+      <UserStack.Screen name={UserRoute.HOME} component={ScreenHome} />
+      <UserStack.Screen
+        name={UserRoute.ScreenNetworkLogger}
+        component={ScreenNetworkLogger}
+      />
+    </UserStack.Navigator>
   );
 }
 export default RoutesUser;
