@@ -4,3 +4,4 @@ export interface CommonAPIResponseType<T> {
     data: T;
     errorCode?: number;
   }
+  

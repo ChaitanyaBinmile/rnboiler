@@ -4,7 +4,7 @@ import styles from './StyleButtonInterceptor';
 import { useNavigation } from '@react-navigation/native';
 import Config from '../../app/Config';
 import DeviceInfo from 'react-native-device-info';
-import { Routes } from '../../routes/Routes';
+import UserRoute from '../../routes/RoutesUser/UserRouteName';
 
 interface ButtonInterceptorProps {
   show: boolean;
@@ -21,7 +21,7 @@ export const ButtonInterceptor: React.FC<ButtonInterceptorProps> = ({ show }) =>
       <TouchableOpacity
       activeOpacity={0.7}
       onPress={() => {
-        navigation.navigate(Routes.SCREEN_NETWORK_LOGGER as never);
+        navigation.navigate(UserRoute.ScreenNetworkLogger as never);
       }}
       style={styles.buttonStyle}>
           <View style={{ ...containerStyle, ...styles.containerStyle }}>

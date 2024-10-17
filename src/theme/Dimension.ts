@@ -11,9 +11,9 @@ const screenHeight = height;
 // Guideline sizes are based on standard iPhone 11 screen mobile device
 // const guidelineBaseWidth = 414;
 // const guidelineBaseHeight = 896;
-
-const widthBaseScale = width / 428;
-const heightBaseScale = height / 926;
+// previously used standards are 428 and 926
+const widthBaseScale = width / 400;
+const heightBaseScale = height / 800;
 
 function normalize(size: number, based = 'width') {
   const newSize = based === 'height' ? size * heightBaseScale : size * widthBaseScale;
