@@ -48,6 +48,11 @@ interface Spacing {
     primaryBlackRGBA: string;
     secondaryBlackRGBA: string;
     transparent: string;
+    focusBlue: string;
+  errorRed: string;
+  defaultBlack: string;
+  buttonBlue: string;
+  buttonTextWhite: string;
   }
 
   export const COLORS: Color = {
@@ -64,6 +69,11 @@ interface Spacing {
     primaryBlackRGBA: 'rgba(12,15,20,0.5)',
     secondaryBlackRGBA: 'rgba(0,0,0,0.7)',
     transparent: 'transparent',
+    focusBlue: '#1876d1',
+    errorRed: 'red',
+    defaultBlack: '#000',
+    buttonBlue: '#004CFFFF',
+    buttonTextWhite: '#fff',
   };
 
   interface FontFamily {
