@@ -17,6 +17,8 @@ const english: LangTypes = {
   PASSWORD_PLACEHOLDER: 'Enter your password',
   CONFIRM_PASSWORD_LABEL: 'Confirm Password',
   CONFIRM_PASSWORD_PLACEHOLDER: 'Confirm your password',
+  SEARCH_LABEL: 'Search',
+  SEARCH_PLACEHOLDER: 'Search',
   FORM_GREETING: 'Hello',
   FORM_TITLE: 'Register',
   RADIO_MULTIPLE_LABLE: "Choose options from Radio Group 1",

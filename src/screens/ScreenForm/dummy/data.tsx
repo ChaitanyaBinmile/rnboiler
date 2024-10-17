@@ -1,6 +1,6 @@
 import english from '../../../assets/lang/English/LangEnglish';
 import { widthPixel, heightPixel, fontPixel } from '../../../theme/Dimension'; 
-import HomeActiveSvg from '../../../assets/images/BottomTabIcons/HomeIconSvg';
+import SearchIconSvg from '../../../assets/images/BottomTabIcons/SearchBar';
 
 export   const formFields = [
     {
@@ -71,5 +71,26 @@ export   const formFields = [
       },
       secureTextEntry: true,
     },
-   
+    {
+      name: 'search',
+      label: english.SEARCH_LABEL,  
+      placeholder: english.SEARCH_PLACEHOLDER,
+      required: true,
+       icon: <SearchIconSvg />,
+      iconPosition: 'left' as const,
+      customContainerStyles: {
+        backgroundColor: '#fff',
+        borderRadius: widthPixel(5),  
+        padding: heightPixel(10),     
+      },
+      customLabelStyles: {
+        color: '#000',
+        fontSize: fontPixel(16),      
+      },
+      customInputStyles: {
+        padding: heightPixel(10),     
+        color: '#000',
+        fontSize: fontPixel(16),      
+      },
+    }
   ];

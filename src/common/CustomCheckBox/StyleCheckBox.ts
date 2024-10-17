@@ -61,9 +61,9 @@ const styles = StyleSheet.create({
   },
   checkmark: {
     color: '#fff',
-    fontSize: fontPixel(16),
+    fontSize: fontPixel(14),
     fontWeight: 'bold',
-    bottom: heightPixel(3),
+    bottom: heightPixel(2),
   },
   submitButton: {
     marginTop: heightPixel(24),

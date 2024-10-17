@@ -23,4 +23,6 @@ export interface LangTypes {
   RADIO_SINGLE_PLACEHOLDER: string,
   AUTOCOMPLETE_PLACEHOLDER:string,
   AUTOCOMPLETE_LABEL:string,
+  SEARCH_LABEL: string,
+  SEARCH_PLACEHOLDER: string,
 }
