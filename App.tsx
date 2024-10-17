@@ -12,6 +12,8 @@ import { View } from 'react-native';
 import ScreenCheckBox from './src/screens/ScreenCheckbox/ScreenCheckbox';
 import ScreenDropdown from './src/screens/ScreenDropDown/ScreenDropDown';
 import ScreenForm from './src/screens/ScreenForm/ScreenForm';
+import ScreenAutoComplete from './src/screens/ScreenAutoComplete/ScreenAutoComplete';
+import ScreenRadioButtons from './src/screens/ScreenRadio/ScreenRadioButtons';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,8 +41,11 @@ function App(): React.JSX.Element {
     // </Provider>
     <View style={{flex:1}}>
       {/* <ScreenCheckBox/> */}
-      <ScreenDropdown/>
-      {/* <ScreenForm/> */}
+      {/* <ScreenDropdown/> */}
+      <ScreenForm/>
+      {/* <ScreenAutoComplete/> */}
+      {/* <ScreenRadioButtons/> */}
+      {/* <ScreenAutoComplete/> */}
     </View>
   );
 }

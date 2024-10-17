@@ -1,5 +1,7 @@
 import english from '../../../assets/lang/English/LangEnglish';
 import { widthPixel, heightPixel, fontPixel } from '../../../theme/Dimension'; 
+import HomeActiveSvg from '../../../assets/images/BottomTabIcons/HomeIconSvg';
+
 export   const formFields = [
     {
       name: 'email',
@@ -28,7 +30,7 @@ export   const formFields = [
       label: english.PASSWORD_LABEL,  
       placeholder: english.PASSWORD_PLACEHOLDER,
       required: true,
-     // icon: <MaterialsActiveSvg />,
+      // icon: <HomeActiveSvg/>,
       iconPosition: 'left' as const,
       customContainerStyles: {
         backgroundColor: '#fff',

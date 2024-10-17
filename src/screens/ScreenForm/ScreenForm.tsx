@@ -6,6 +6,7 @@ import { FormValidationSchema } from '../../common/CustomForm/validations/Valida
 import {styles} from './StyleScreenForm'
 import { formFields } from './dummy/data';
 import english from '../../assets/lang/English/LangEnglish';
+
 const ScreenForm: React.FC = () => 
   {
   const handleFormSubmit = (data: any) => {
@@ -24,6 +25,7 @@ const ScreenForm: React.FC = () =>
           onSubmit={handleFormSubmit}
           validationSchema={FormValidationSchema}
           //buttonLabel="Register"
+          
         />
       </View>
 
