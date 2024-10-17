@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import { heightPixel } from "../../theme/Dimension";
 
 const BottomTabStyle = StyleSheet.create({
         tabBarStyle: {
-          height: 80,
+          height: heightPixel(80),
           position: 'absolute',
           // backgroundColor: COLORS.primaryBlackRGBA,
           borderTopWidth: 0,
