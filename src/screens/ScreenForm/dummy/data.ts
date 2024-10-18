@@ -1,6 +1,6 @@
 import english from '../../../assets/lang/English/LangEnglish';
 import { widthPixel, heightPixel, fontPixel } from '../../../theme/Dimension'; 
-import HomeActiveSvg from '../../../assets/images/BottomTabIcons/HomeIconSvg';
+import HomeActiveSvg from '../../../assets/icons/BottomTabIcons/HomeIconSvg';
 
 export   const formFields = [
     {

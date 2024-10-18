@@ -2,8 +2,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { BottomTabParamList } from "../type"
 import ScreenDummy from "../../screens/ScreenDummy/ScreenDummy";
 import ScreenHome from "../../screens/ScreenHome/ScreenHome";
-import HomeActiveSvg from "../../assets/images/BottomTabIcons/HomeActiveSvg";
-import MaterialsActiveSvg from "../../assets/images/BottomTabIcons/MaterialsActiveSvg";
+import HomeActiveSvg from "../../assets/icons/BottomTabIcons/HomeActiveSvg";
+import MaterialsActiveSvg from "../../assets/icons/BottomTabIcons/MaterialsActiveSvg";
 import { COLORS } from "../../theme/theme";
 import BottomTabStyle from "./BottomTabStyle";
 import BottomTabName from "./BottomTabName";

@@ -1,4 +1,4 @@
-import { heightPixel, widthPixel } from './Dimension';
+import { widthPixel } from './Dimension';
 
 interface Spacing {
     space_2: number;
@@ -98,48 +98,4 @@ interface Spacing {
     poppins_regular: 'Poppins-Regular',
     poppins_semibold: 'Poppins-SemiBold',
     poppins_thin: 'Poppins-Thin',
-  };
-
-  interface FontSize {
-    size_8: number;
-    size_10: number;
-    size_12: number;
-    size_14: number;
-    size_16: number;
-    size_18: number;
-    size_20: number;
-    size_24: number;
-    size_28: number;
-    size_30: number;
-  }
-
-  export const FONTSIZE: FontSize = {
-    size_8: heightPixel(12.5),
-    size_10: heightPixel(14.5),
-    size_12: heightPixel(16.5),
-    size_14: heightPixel(18.5),
-    size_16: heightPixel(20.5),
-    size_18: heightPixel(22.5),
-    size_20: heightPixel(24.5),
-    size_24: heightPixel(28.5),
-    size_28: heightPixel(32.5),
-    size_30: heightPixel(34.5),
-  };
-
-  interface BorderRadius {
-    radius_4: number;
-    radius_8: number;
-    radius_10: number;
-    radius_15: number;
-    radius_20: number;
-    radius_25: number;
-  }
-
-  export const BORDERRADIUS: BorderRadius = {
-    radius_4: 4,
-    radius_8: 8,
-    radius_10: 10,
-    radius_15: 15,
-    radius_20: 20,
-    radius_25: 25,
   };
