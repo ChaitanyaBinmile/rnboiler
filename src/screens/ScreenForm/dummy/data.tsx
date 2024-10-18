@@ -1,7 +1,7 @@
 import english from '../../../assets/lang/English/LangEnglish';
 import { widthPixel, heightPixel, fontPixel } from '../../../theme/Dimension'; 
 import SearchIconSvg from '../../../assets/images/BottomTabIcons/SearchBar';
-
+import { COLORS } from '../../../theme/theme';
 export   const formFields = [
     {
       name: 'email',
@@ -9,18 +9,18 @@ export   const formFields = [
       placeholder: english.EMAIL_PLACEHOLDER, 
       required: true,
       customContainerStyles: {
-        backgroundColor: '#fff',
+        backgroundColor: COLORS.buttonTextWhite,
         borderRadius: widthPixel(5), 
         padding: heightPixel(10),     
       },
       customLabelStyles: {
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
       customInputStyles: {
         padding: heightPixel(10),     
-        borderColor: '#000',
-        color: '#000',
+        borderColor: COLORS.defaultBlack,
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),     
       },
       keyboardType: 'email-address' as const,
@@ -33,17 +33,17 @@ export   const formFields = [
       // icon: <HomeActiveSvg/>,
       iconPosition: 'left' as const,
       customContainerStyles: {
-        backgroundColor: '#fff',
+        backgroundColor: COLORS.buttonTextWhite,
         borderRadius: widthPixel(5),  
         padding: heightPixel(10),     
       },
       customLabelStyles: {
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),     
       },
       customInputStyles: {
         padding: heightPixel(10),    
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
       secureTextEntry: true,
@@ -56,17 +56,17 @@ export   const formFields = [
       // icon: <HomeActiveSvg />,
       iconPosition: 'left' as const,
       customContainerStyles: {
-        backgroundColor: '#fff',
+        backgroundColor: COLORS.buttonTextWhite,
         borderRadius: widthPixel(5),  
         padding: heightPixel(10),     
       },
       customLabelStyles: {
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
       customInputStyles: {
         padding: heightPixel(10),     
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
       secureTextEntry: true,
@@ -79,17 +79,17 @@ export   const formFields = [
        icon: <SearchIconSvg />,
       iconPosition: 'left' as const,
       customContainerStyles: {
-        backgroundColor: '#fff',
+        backgroundColor: COLORS.buttonTextWhite,
         borderRadius: widthPixel(5),  
         padding: heightPixel(10),     
       },
       customLabelStyles: {
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
       customInputStyles: {
         padding: heightPixel(10),     
-        color: '#000',
+        color: COLORS.defaultBlack,
         fontSize: fontPixel(16),      
       },
     }

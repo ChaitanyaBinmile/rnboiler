@@ -98,12 +98,11 @@ const CustomCheckBox: React.FC<CheckBoxProps> = ({
                     isSelected(option.value, value)
                       ? styles.selectedCheckCircle
                       : {},
-                  ]}
-                >
+                  ]}>
                   {isSelected(option.value, value) && (
                     <Text style={styles.checkmark}>✓</Text>
                   )}
-                  </View>
+                </View>
                 <Text style={[styles.checkLabel, inputStyle]}>
                   {option.label}
                 </Text>

@@ -1,8 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { View, TextInput, FlatList, TouchableOpacity, Text, Keyboard } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  TextInput,
+  FlatList,
+  TouchableOpacity,
+  Text,
+  Keyboard,
+} from 'react-native';
 import axios from 'axios';
-import { useForm, Controller } from 'react-hook-form';
-import { AutoCompleteProps, AutoCompleteOption, SubmissionData } from './Types/CustomAutoCompleteProps';
+import {useForm, Controller} from 'react-hook-form';
+import {
+  AutoCompleteProps,
+  AutoCompleteOption,
+  SubmissionData,
+} from './type';
 import styles from './StylesCustomAutoComplete';
 
 const AutoComplete: React.FC<AutoCompleteProps> = ({
@@ -24,7 +35,10 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
   onSubmit,
   onShowResults,
 }) => {
-  const { control, formState: { errors } } = useForm({
+  const {
+    control,
+    formState: {errors},
+  } = useForm({
     defaultValues: {
       autoCompleteValue: [] as AutoCompleteOption[],
     },
@@ -34,8 +48,10 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
   const [options, setOptions] = useState<AutoCompleteOption[]>([]);
   const [isFocused, setIsFocused] = useState<boolean>(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [selectedOptions, setSelectedOptions] = useState<AutoCompleteOption[]>([]);
-// const API_URL = 'http://10.0.2.2:3000/options';
+  const [selectedOptions, setSelectedOptions] = useState<AutoCompleteOption[]>(
+    [],
+  );
+  // const API_URL = 'http://10.0.2.2:3000/options';
   const API_URL = 'http://10.10.11.142:3000/options';
 
   useEffect(() => {
@@ -51,16 +67,14 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
     }
   };
 
- 
-
   const handleSubmitA = () => {
     const selectedIds = selectedOptions
-      .filter(option => option.id)  
-      .map(option => option.id!);   
+      .filter(option => option.id)
+      .map(option => option.id!);
 
     const addedOptions = selectedOptions
-      .filter(option => !option.id) 
-      .map(option => option.value); 
+      .filter(option => !option.id)
+      .map(option => option.value);
 
     if (required && selectedOptions.length === 0) {
       setSubmitError('Please select at least one option.');
@@ -68,31 +82,37 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
       setSubmitError(null);
       if (onSubmit) {
         const submissionData: SubmissionData = {
-          selectedIds,  
+          selectedIds,
           addedOptions,
         };
-        onSubmit(submissionData);  
+        onSubmit(submissionData);
       }
-      
     }
-    
 
     console.log('Selected IDs:', selectedIds);
     console.log('Added Options (manual):', addedOptions);
   };
 
-  const handleSelect = (item: AutoCompleteOption, onChange: (value: AutoCompleteOption[]) => void, value: AutoCompleteOption[]) => {
+  const handleSelect = (
+    item: AutoCompleteOption,
+    onChange: (value: AutoCompleteOption[]) => void,
+    value: AutoCompleteOption[],
+  ) => {
     onChange([...value, item]);
-    setSelectedOptions([...selectedOptions, item]); 
+    setSelectedOptions([...selectedOptions, item]);
     setQuery('');
     if (onSelect) onSelect(item);
     setSubmitError(null);
   };
 
-  const handleRemoveOption = (item: AutoCompleteOption, onChange: (value: AutoCompleteOption[]) => void, value: AutoCompleteOption[]) => {
+  const handleRemoveOption = (
+    item: AutoCompleteOption,
+    onChange: (value: AutoCompleteOption[]) => void,
+    value: AutoCompleteOption[],
+  ) => {
     const updatedOptions = value.filter(option => option.label !== item.label);
     onChange(updatedOptions);
-    setSelectedOptions(updatedOptions); 
+    setSelectedOptions(updatedOptions);
   };
 
   const handleClear = (onChange: (value: AutoCompleteOption[]) => void) => {
@@ -101,14 +121,19 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
     setQuery('');
   };
 
-  const handleAddOption = (onChange: (value: AutoCompleteOption[]) => void, value: AutoCompleteOption[]) => {
+  const handleAddOption = (
+    onChange: (value: AutoCompleteOption[]) => void,
+    value: AutoCompleteOption[],
+  ) => {
     if (query.trim()) {
       const newOption: AutoCompleteOption = {
         label: query,
         value: query,
       };
 
-      const existingOption = options.find(option => option.label === newOption.label);
+      const existingOption = options.find(
+        option => option.label === newOption.label,
+      );
       if (!existingOption) {
         onChange([...value, newOption]);
         setSelectedOptions([...selectedOptions, newOption]);
@@ -118,13 +143,16 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
     }
   };
 
-  const handleSubmitEditing = (onChange: (value: AutoCompleteOption[]) => void, value: AutoCompleteOption[]) => {
+  const handleSubmitEditing = (
+    onChange: (value: AutoCompleteOption[]) => void,
+    value: AutoCompleteOption[],
+  ) => {
     handleAddOption(onChange, value);
     Keyboard.dismiss();
   };
 
-  const filteredData = options.filter(option =>
-    option.label && query && option.label.includes(query)
+  const filteredData = options.filter(
+    option => option.label && query && option.label.includes(query),
   );
 
   if (onShowResults) {
@@ -136,16 +164,27 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
       <Controller
         control={control}
         name="autoCompleteValue"
-        rules={{ required: 'At least one option must be selected.' }}
-        render={({ field: { onChange, value } }) => (
+        rules={{required: 'At least one option must be selected.'}}
+        render={({field: {onChange, value}}) => (
           <>
             {label && (
-              <Text style={[
-                styles.label,
-                required && value.length === 0 && !error ? styles.requiredMark : styles.defaultText,
-              ]}>
+              <Text
+                style={[
+                  styles.label,
+                  required && value.length === 0 && !error
+                    ? styles.requiredMark
+                    : styles.defaultText,
+                ]}>
                 {label}
-                {required && <Text style={styles.requiredMark}>{' *'}</Text>}
+                {required && (
+                  <Text
+                    style={[
+                      styles.requiredMark,
+                      submitError ? styles.errorMark : null,
+                    ]}>
+                    {' *'}
+                  </Text>
+                )}
               </Text>
             )}
 
@@ -158,13 +197,13 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
                   : isFocused
                   ? styles.focusBorder
                   : styles.blurBorder,
-              ]}
-            >
+              ]}>
               <View style={styles.chipInputContainer}>
                 {value.map((item: AutoCompleteOption) => (
                   <View key={item.label} style={styles.selectedChip}>
                     <Text style={styles.chipText}>{item.label}</Text>
-                    <TouchableOpacity onPress={() => handleRemoveOption(item, onChange, value)}>
+                    <TouchableOpacity
+                      onPress={() => handleRemoveOption(item, onChange, value)}>
                       <Text style={styles.chipRemove}>✖</Text>
                     </TouchableOpacity>
                   </View>
@@ -200,7 +239,9 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
 
               {clearable && value.length > 0 && (
                 <View style={styles.clearwrapper}>
-                  <TouchableOpacity onPress={() => handleClear(onChange)} style={styles.clearButton}>
+                  <TouchableOpacity
+                    onPress={() => handleClear(onChange)}
+                    style={styles.clearButton}>
                     <Text style={styles.clearText}>✖</Text>
                   </TouchableOpacity>
                 </View>
@@ -212,8 +253,9 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
                 {...flatListProps}
                 data={filteredData}
                 keyExtractor={item => item.label}
-                renderItem={({ item }) => (
-                  <TouchableOpacity onPress={() => handleSelect(item, onChange, value)}>
+                renderItem={({item}) => (
+                  <TouchableOpacity
+                    onPress={() => handleSelect(item, onChange, value)}>
                     <Text style={styles.dropdownItem}>{item.label}</Text>
                   </TouchableOpacity>
                 )}
@@ -221,16 +263,21 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({
               />
             )}
 
-            {submitError && <Text style={styles.submitErrorText}>{submitError}</Text>}
-            {errors.autoCompleteValue && <Text style={styles.errorText}>{errors.autoCompleteValue.message}</Text>}
+            {submitError && (
+              <Text style={styles.submitErrorText}>{submitError}</Text>
+            )}
+            {errors.autoCompleteValue && (
+              <Text style={styles.errorText}>
+                {errors.autoCompleteValue.message}
+              </Text>
+            )}
 
             <TouchableOpacity
               style={[styles.submitButton, submitButtonStyle]}
               onPress={() => {
                 handleSubmitA();
                 handleClear(onChange);
-              }}
-            >
+              }}>
               <Text style={[styles.submitButtonText, submitButtonTextStyle]}>
                 Submit
               </Text>

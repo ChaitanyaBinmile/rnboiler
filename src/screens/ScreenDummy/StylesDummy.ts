@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-
+import { COLORS } from "../../theme/theme";
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -13,20 +13,20 @@ const styles = StyleSheet.create({
     },
     text: {
       fontSize: 20,
-      color: '#333',
+      color: COLORS.primaryGreyHex,
       marginBottom: 20,
     },
     todoItem: {
       padding: 10,
-      backgroundColor: '#fff',
+      backgroundColor: COLORS.buttonTextWhite,
       borderBottomWidth: 1,
-      borderBottomColor: '#ccc',
+      borderBottomColor: COLORS.buttonBorder,
       width: '100%',
       alignItems: 'center',
     },
     todoText: {
       fontSize: 16,
-      color: '#333',
+      color: COLORS.primaryGreyHex,
     },
   });
 

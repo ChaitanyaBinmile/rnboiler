@@ -1,7 +1,7 @@
-import { StyleProp, ViewStyle, TextStyle } from 'react-native';
+import {StyleProp, ViewStyle, TextStyle} from 'react-native';
 
 export interface Option {
-  id: string; 
+  id: string;
   label: string;
   value: string;
 }
@@ -14,12 +14,12 @@ export interface DropdownProps {
   placeholder: string;
   label: string;
   disabled?: boolean;
-  error?: string | undefined; 
+  error?: string | undefined;
   multiple?: boolean;
-  clearable?: boolean; 
+  clearable?: boolean;
   required?: boolean;
-  style?: StyleProp<ViewStyle>;        
-  inputStyle?: StyleProp<TextStyle>;  
-  dropdownStyle?: StyleProp<ViewStyle>; 
-  errorStyle?: StyleProp<TextStyle>;   
+  style?: StyleProp<ViewStyle>;
+  inputStyle?: StyleProp<TextStyle>;
+  dropdownStyle?: StyleProp<ViewStyle>;
+  errorStyle?: StyleProp<TextStyle>;
 }

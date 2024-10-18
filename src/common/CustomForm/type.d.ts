@@ -1,11 +1,11 @@
-import { ViewStyle, TextStyle, TextInputProps } from 'react-native';
-import { ZodSchema } from 'zod';
-import { ReactNode } from 'react';
+import {ViewStyle, TextStyle, TextInputProps} from 'react-native';
+import {ZodSchema} from 'zod';
+import {ReactNode} from 'react';
 
 export interface FormField {
   name: string;
   label?: string;
-  value?: string;  
+  value?: string;
   placeholder?: string;
   icon?: ReactNode;
   iconPosition?: 'left' | 'right';
@@ -13,7 +13,7 @@ export interface FormField {
   errorMessage?: string;
   customContainerStyles?: ViewStyle;
   customInputStyles?: ViewStyle;
-  customLabelStyles?: TextStyle; 
+  customLabelStyles?: TextStyle;
   customErrorStyles?: TextStyle;
   secureTextEntry?: boolean;
   maxLength?: number;
@@ -21,14 +21,13 @@ export interface FormField {
   multiline?: boolean;
   onFocus?: () => void;
   onBlur?: () => void;
-  onChangeText?: (text: string) => void;  
+  onChangeText?: (text: string) => void;
 }
 
-
 export interface CustomFormProps {
-  fields: FormField[];  
-  onSubmit: (data: Record<string, string>) => void;  
-  buttonLabel?: string;  
-  validationSchema: ZodSchema; 
+  fields: FormField[];
+  onSubmit: (data: Record<string, string>) => void;
+  buttonLabel?: string;
+  validationSchema: ZodSchema;
   children?: React.ReactNode;
 }

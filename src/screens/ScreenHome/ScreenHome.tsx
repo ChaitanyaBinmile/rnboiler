@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, SafeAreaView } from 'react-native';
 import ComponentHeader from '../../commonComponents/ComponentHeader/ComponentHeader';
 import Icons from '../../assets/images/svgIcons/SvgData';
 import { DrawerActions, useNavigation } from '@react-navigation/native';
+import { COLORS } from '../../theme/theme';
 
 const ScreenHome = () => {
   const navigation=useNavigation()
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-    color: '#333',
+    color: COLORS.primaryGreyHex,
   },
 });
 
