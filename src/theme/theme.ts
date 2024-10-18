@@ -1,4 +1,4 @@
-import { heightPixel, normalizeSize, widthPixel } from './Dimension';
+import { widthPixel,heightPixel,normalizeSize} from './Dimension';
 
 interface Spacing {
   space_2: number;
@@ -156,4 +156,5 @@ interface BorderRadius {
     radius_15: normalizeSize(15),
     radius_20: normalizeSize(20),
     radius_25: normalizeSize(25),
-  };
+  }
+ 
