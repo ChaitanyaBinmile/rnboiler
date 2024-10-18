@@ -1,4 +1,4 @@
-import { LangTypes } from '../types/LangTypes';
+import {LangTypes} from '../types/LangTypes';
 
 const tamil: LangTypes = {
   HOME_TAB_TITLE: 'Home',
@@ -24,7 +24,9 @@ const tamil: LangTypes = {
   RADIO_MULTIPLE_PLACEHOLDER: '',
   RADIO_SINGLE_PLACEHOLDER: '',
   AUTOCOMPLETE_PLACEHOLDER: '',
-  AUTOCOMPLETE_LABEL: ''
+  AUTOCOMPLETE_LABEL: '',
+  SEARCH_LABEL: '',
+  SEARCH_PLACEHOLDER: '',
 };
 
 export default tamil;

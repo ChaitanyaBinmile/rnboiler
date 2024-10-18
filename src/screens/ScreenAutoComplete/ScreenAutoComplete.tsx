@@ -1,7 +1,7 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import AutoComplete from '../../common/CustomAutoComplete/CustomAutoComplete'; 
-import styles from './StylesHome2';
+import {SafeAreaView} from 'react-native';
+import AutoComplete from '../../common/CustomAutoComplete/CustomAutoComplete';
+import styles from './StylesAutoComplete';
 import english from '../../assets/lang/English/LangEnglish';
 
 const ScreenAutoComplete: React.FC = () => {

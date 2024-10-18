@@ -1,6 +1,12 @@
-import { StyleSheet } from 'react-native';
-import { widthPixel, heightPixel, fontPixel, pixelSizeVertical, pixelSizeHorizontal } from '../../theme/Dimension'; 
-
+import {StyleSheet} from 'react-native';
+import {
+  widthPixel,
+  heightPixel,
+  fontPixel,
+  pixelSizeVertical,
+  pixelSizeHorizontal,
+} from '../../theme/Dimension';
+import {COLORS, FONTFAMILY} from '../../theme/theme';
 const styles = StyleSheet.create({
   formContainer: {
     padding: pixelSizeVertical(10),
@@ -10,7 +16,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   WrapperView: {
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.buttonTextWhite,
     borderRadius: widthPixel(5),
     padding: pixelSizeVertical(10),
   },
@@ -18,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+    backgroundColor: COLORS.secondaryBlackRGBA,
   },
   datePickerButtons: {
     flexDirection: 'row',
@@ -26,37 +32,38 @@ const styles = StyleSheet.create({
     marginTop: heightPixel(20),
   },
   confirmButton: {
-    backgroundColor: '#1876d1',
+    backgroundColor: COLORS.buttonBlue,
     padding: pixelSizeVertical(10),
     borderRadius: widthPixel(5),
     marginRight: widthPixel(20),
   },
   cancelButton: {
-    backgroundColor: '#ccc',
+    backgroundColor: COLORS.buttonBorder,
     padding: pixelSizeVertical(10),
     borderRadius: widthPixel(5),
   },
   buttonText: {
-    color: '#fff',
+    color: COLORS.buttonTextWhite,
     fontWeight: 'bold',
   },
   label: {
     fontSize: fontPixel(16),
     fontWeight: 'bold',
     marginBottom: heightPixel(8),
-    color: '#333',
+    color: COLORS.primaryGreyHex,
+    fontFamily:FONTFAMILY.poppins_black
   },
   required: {
-    color: 'black', 
+    color: COLORS.primaryBlackHex,
   },
   errorText: {
-    color: 'red',
+    color: COLORS.errorRed,
   },
   defaultText: {
-    color: 'black', 
+    color: COLORS.primaryBlackHex,
   },
   errorLabel: {
-    color: 'red', 
+    color: COLORS.errorRed,
   },
   inputWrapper: {
     width: '100%',
@@ -65,37 +72,38 @@ const styles = StyleSheet.create({
     borderRadius: widthPixel(8),
     paddingHorizontal: pixelSizeHorizontal(8),
     borderWidth: widthPixel(1),
-    borderColor: '#ccc', 
+    borderColor: COLORS.buttonBorder,
   },
   input: {
     flex: 1,
     height: heightPixel(60),
     fontSize: fontPixel(16),
     paddingLeft: widthPixel(12),
-    color: '#333',
+    color: COLORS.primaryGreyHex,
   },
   focusedInputWrapper: {
     borderWidth: widthPixel(2),
-    borderColor: '#1876d1', 
+    borderColor: COLORS.focusBlue,
     borderRadius: widthPixel(8),
   },
   errorInputWrapper: {
     borderWidth: widthPixel(2),
-    borderColor: 'red', 
+    borderColor: COLORS.errorRed,
     borderRadius: widthPixel(8),
   },
   submitButton: {
     marginTop: heightPixel(24),
-    backgroundColor: '#004CFFFF',
+    backgroundColor: COLORS.buttonBlue,
     paddingVertical: heightPixel(12),
     borderRadius: widthPixel(8),
     alignItems: 'center',
     marginBottom: heightPixel(20),
   },
   submitButtonText: {
-    color: '#fff',
+    color: COLORS.buttonTextWhite,
     fontSize: fontPixel(16),
     fontWeight: 'bold',
+    fontFamily:FONTFAMILY.poppins_regular,
   },
 });
 

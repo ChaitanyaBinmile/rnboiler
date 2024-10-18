@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import {View, StyleSheet} from 'react-native';
 import CustomDropdown from '../../common/CustomDropDown/CustomDropDown';
-import { Option } from '../../common/CustomDropDown/type';
-import {styles} from './StyleScreenDropDown'
+import {Option} from '../../common/CustomDropDown/type';
+import {styles} from './StyleScreenDropDown';
 import english from '../../assets/lang/English/LangEnglish';
-import { options1,options2 } from './dummy/data';
-
+import {options1, options2} from './dummy/data';
 
 const ScreenDropdown: React.FC = () => {
-
   return (
     <View style={styles.container}>
       <CustomDropdown
@@ -28,20 +26,10 @@ const ScreenDropdown: React.FC = () => {
         required={true}
         multiple={false}
         clearable={true}
-       // style={styles.dropdown}
+        // style={styles.dropdown}
       />
     </View>
   );
 };
 
-
-
 export default ScreenDropdown;
-
-
-
-
-
-
-
-

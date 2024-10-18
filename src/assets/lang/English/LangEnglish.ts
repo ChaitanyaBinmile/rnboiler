@@ -1,4 +1,4 @@
-import { LangTypes } from '../types/LangTypes';
+import {LangTypes} from '../types/LangTypes';
 
 const english: LangTypes = {
   HOME_TAB_TITLE: 'Home',
@@ -17,14 +17,16 @@ const english: LangTypes = {
   PASSWORD_PLACEHOLDER: 'Enter your password',
   CONFIRM_PASSWORD_LABEL: 'Confirm Password',
   CONFIRM_PASSWORD_PLACEHOLDER: 'Confirm your password',
+  SEARCH_LABEL: 'Search',
+  SEARCH_PLACEHOLDER: 'Search',
   FORM_GREETING: 'Hello',
   FORM_TITLE: 'Register',
-  RADIO_MULTIPLE_LABLE: "Choose options from Radio Group 1",
-  RADIO_SINGLE_LABLE: "Choose an option from Radio Group 2",
-  RADIO_MULTIPLE_PLACEHOLDER: "Select options from Radio Group 1",
-  RADIO_SINGLE_PLACEHOLDER: "Select an option from Radio Group 2",
-  AUTOCOMPLETE_PLACEHOLDER: "Search and select",
-  AUTOCOMPLETE_LABEL: "Choose an option",
+  RADIO_MULTIPLE_LABLE: 'Choose options from Radio Group 1',
+  RADIO_SINGLE_LABLE: 'Choose an option from Radio Group 2',
+  RADIO_MULTIPLE_PLACEHOLDER: 'Select options from Radio Group 1',
+  RADIO_SINGLE_PLACEHOLDER: 'Select an option from Radio Group 2',
+  AUTOCOMPLETE_PLACEHOLDER: 'Search and select',
+  AUTOCOMPLETE_LABEL: 'Choose an option',
 };
 
 export default english;
