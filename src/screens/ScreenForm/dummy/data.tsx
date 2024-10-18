@@ -1,6 +1,6 @@
 import english from '../../../assets/lang/English/LangEnglish';
 import { widthPixel, heightPixel, fontPixel } from '../../../theme/Dimension'; 
-import SearchIconSvg from '../../../assets/images/BottomTabIcons/SearchBar';
+import SearchIconSvg from '../../../assets/icons/BottomTabIcons/SearchBar';
 import { COLORS } from '../../../theme/theme';
 export   const formFields = [
     {

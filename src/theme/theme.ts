@@ -1,4 +1,4 @@
-import {heightPixel, widthPixel} from './Dimension';
+import { heightPixel, normalizeSize, widthPixel } from './Dimension';
 
 interface Spacing {
   space_2: number;
@@ -139,11 +139,21 @@ interface BorderRadius {
   radius_25: number;
 }
 
-export const BORDERRADIUS: BorderRadius = {
-  radius_4: 4,
-  radius_8: 8,
-  radius_10: 10,
-  radius_15: 15,
-  radius_20: 20,
-  radius_25: 25,
-};
+
+  interface BorderRadius {
+    radius_4: number;
+    radius_8: number;
+    radius_10: number;
+    radius_15: number;
+    radius_20: number;
+    radius_25: number;
+  }
+
+  export const BORDERRADIUS: BorderRadius = {
+    radius_4: normalizeSize(4),
+    radius_8: normalizeSize(8),
+    radius_10: normalizeSize(10),
+    radius_15: normalizeSize(15),
+    radius_20: normalizeSize(20),
+    radius_25: normalizeSize(25),
+  };

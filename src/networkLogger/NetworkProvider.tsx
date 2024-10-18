@@ -2,7 +2,7 @@ import React, { createContext, useCallback, useEffect, useMemo, useState } from 
 import Config from '../app/Config';
 import { ButtonInterceptor } from '../customInterceptor/ButtonInterceptor/ButtonInterceptor';
 // import { debugLog } from '../utils/Logger';
-import { ChildrenType, ProviderType } from './Types';
+import { ChildrenType, ProviderType } from './type';
 
 interface ILoggerProps {
   isOpen: boolean;
