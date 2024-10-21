@@ -25,6 +25,9 @@ const english: LangTypes = {
   RADIO_SINGLE_PLACEHOLDER: "Select an option from Radio Group 2",
   AUTOCOMPLETE_PLACEHOLDER: "Search and select",
   AUTOCOMPLETE_LABEL: "Choose an option",
+  BOTTOMSHEET_TEXT: 'Dummy Text',
+  BOTTOMSHEET_BUTTONTEXT: 'Close',
+  BOTTOMSHEET_ONCLICKBUTTONTEXT: 'Open BottomSheet'
 };
 
 export default english;

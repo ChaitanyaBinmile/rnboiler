@@ -53,6 +53,8 @@ interface Spacing {
   defaultBlack: string;
   buttonBlue: string;
   buttonTextWhite: string;
+  primarySilverBorderHex:string;
+  primaryCharcoalHex:string;
   }
 
   export const COLORS: Color = {
@@ -74,6 +76,8 @@ interface Spacing {
     defaultBlack: '#000',
     buttonBlue: '#004CFFFF',
     buttonTextWhite: '#fff',
+    primarySilverBorderHex: '#ccc',
+    primaryCharcoalHex: '#343a40',
   };
 
   interface FontFamily {
