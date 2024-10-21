@@ -7,7 +7,7 @@ import { LangTypes } from '../../assets/lang/types/LangTypes';
 import { debugLog } from '../Logger';
 import { ChildrenType, ProviderType, TranslationsTypes } from './type';
 import { LanguageSupport } from './LanguageSupport';
-import { AppInstance } from '../../common/AppInstance';
+import { AppInstance } from '../AppInstance';
 
 const TAG = 'LocalizationProvider: ';
 
