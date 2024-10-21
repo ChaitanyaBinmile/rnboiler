@@ -9,5 +9,5 @@ export interface CustomBottomSheetProps {
   // height: number; //height of Bottom Sheet
   transparent: boolean; //background screen
   children: ReactNode,
-  cutomBottomStyles: ViewStyle,
+  customBottomStyles: ViewStyle,
 }

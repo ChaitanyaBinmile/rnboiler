@@ -25,11 +25,9 @@ const ScreenBottomSheet = () => {
       <CustomBottomSheet
         visible={bottomSheetVisible}
         onClose={closeBottomSheet}
-        cutomBottomStyles={{}}
-        transparent={BottomSheetData.transparent}
-      >
+        customBottomStyles={{}}
+        transparent={BottomSheetData.transparent}>
         <Text>hello</Text>
-
       </CustomBottomSheet>
     </View>
   );
