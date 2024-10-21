@@ -53,8 +53,8 @@ interface Color {
   defaultBlack: string;
   buttonBlue: string;
   buttonTextWhite: string;
-  buttonBorder: string;
-  removeOption: string;
+  primarySilverBorderHex: string;
+  primaryCharcoalHex: string;
 }
 
 export const COLORS: Color = {
@@ -76,8 +76,8 @@ export const COLORS: Color = {
   defaultBlack: '#000',
   buttonBlue: '#004CFFFF',
   buttonTextWhite: '#fff',
-  buttonBorder: '#ccc',
-  removeOption: '#343a40',
+  primarySilverBorderHex: '#ccc',
+  primaryCharcoalHex: '#343a40',
 };
 
 interface FontFamily {

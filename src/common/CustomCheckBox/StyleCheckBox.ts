@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     height: widthPixel(20),
     width: widthPixel(20),
     borderWidth: 1,
-    borderColor: COLORS.buttonBorder,
+    borderColor: COLORS.primarySilverBorderHex,
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: widthPixel(10),

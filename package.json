@@ -42,7 +42,7 @@
 
     "zod": "^3.23.8"
 
-    "yarn": "^1.22.22"
+    
 
   },
   "devDependencies": {

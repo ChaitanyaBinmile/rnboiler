@@ -27,6 +27,9 @@ const tamil: LangTypes = {
   AUTOCOMPLETE_LABEL: '',
   SEARCH_LABEL: '',
   SEARCH_PLACEHOLDER: '',
+  BOTTOMSHEET_TEXT: '',
+  BOTTOMSHEET_BUTTONTEXT: '',
+  BOTTOMSHEET_ONCLICKBUTTONTEXT: ''
 };
 
 export default tamil;

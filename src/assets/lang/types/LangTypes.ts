@@ -25,4 +25,7 @@ export interface LangTypes {
   AUTOCOMPLETE_LABEL: string;
   SEARCH_LABEL: string;
   SEARCH_PLACEHOLDER: string;
+  BOTTOMSHEET_TEXT:string;
+  BOTTOMSHEET_BUTTONTEXT:String;
+  BOTTOMSHEET_ONCLICKBUTTONTEXT:string,
 }

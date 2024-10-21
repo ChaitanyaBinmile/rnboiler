@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     width: widthPixel(20),
     borderRadius: widthPixel(10),
     borderWidth: widthPixel(2),
-    borderColor: COLORS.buttonBorder,
+    borderColor: COLORS.primarySilverBorderHex,
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: widthPixel(10),

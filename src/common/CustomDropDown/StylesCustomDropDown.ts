@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
     marginLeft: widthPixel(8),
   },
   clearText: {
-    color: COLORS.removeOption,
+    color: COLORS.primaryCharcoalHex,
   },
   dropdown: {
     borderWidth: widthPixel(1),
-    borderColor: COLORS.buttonBorder,
+    borderColor: COLORS.primarySilverBorderHex,
     backgroundColor: COLORS.primaryWhiteHex,
     borderRadius: widthPixel(8),
   },
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   },
   optionSeparator: {
     height: heightPixel(1),
-    backgroundColor: COLORS.buttonBorder,
+    backgroundColor: COLORS.primarySilverBorderHex,
     marginHorizontal: widthPixel(10),
   },
   selectedOptionsContainer: {
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     marginHorizontal: widthPixel(5),
   },
   removeOptionText: {
-    color: COLORS.removeOption,
+    color: COLORS.primaryCharcoalHex,
     fontWeight: 'bold',
   },
   submitButton: {

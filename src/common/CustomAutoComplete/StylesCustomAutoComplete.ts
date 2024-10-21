@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     padding: pixelSizeHorizontal(5),
   },
   clearText: {
-    color: COLORS.removeOption,
+    color: COLORS.primaryCharcoalHex,
     fontSize: fontPixel(14),
   },
   requiredMark: {
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   listContainer: {
     maxHeight: heightPixel(200),
     borderWidth: widthPixel(1),
-    borderColor: COLORS.buttonBorder,
+    borderColor: COLORS.primarySilverBorderHex,
     borderRadius: widthPixel(8),
     marginTop: heightPixel(5),
     backgroundColor: COLORS.buttonTextWhite,
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: COLORS.defaultBlack,
     borderBottomWidth: widthPixel(1),
-    borderBottomColor: COLORS.buttonBorder,
+    borderBottomColor: COLORS.primarySilverBorderHex,
     marginHorizontal: pixelSizeHorizontal(5),
   },
   selectedChip: {
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     fontSize: fontPixel(14),
   },
   chipRemove: {
-    color: COLORS.removeOption,
+    color: COLORS.primaryCharcoalHex,
     fontWeight: 'bold',
   },
   submitErrorText: {

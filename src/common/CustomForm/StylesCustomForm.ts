@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     marginRight: widthPixel(20),
   },
   cancelButton: {
-    backgroundColor: COLORS.buttonBorder,
+    backgroundColor: COLORS.primarySilverBorderHex,
     padding: pixelSizeVertical(10),
     borderRadius: widthPixel(5),
   },
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     borderRadius: widthPixel(8),
     paddingHorizontal: pixelSizeHorizontal(8),
     borderWidth: widthPixel(1),
-    borderColor: COLORS.buttonBorder,
+    borderColor: COLORS.primarySilverBorderHex,
   },
   input: {
     flex: 1,
