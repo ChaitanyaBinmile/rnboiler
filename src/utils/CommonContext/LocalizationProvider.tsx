@@ -49,7 +49,7 @@ export function LocalizationProvider({ children }: ProviderType ) {
     () => ({
       appLanguage,
       setAppLanguage,
-      translations: translations[appLanguage as keyof TranslationsTypes],
+      translations: translations[appLanguage as unknown as keyof TranslationsTypes],
     }),
     [appLanguage, translations],
   );
