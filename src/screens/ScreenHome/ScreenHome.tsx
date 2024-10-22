@@ -4,6 +4,7 @@ import ComponentHeader from '../../commonComponents/ComponentHeader/ComponentHea
 import Icons from '../../assets/images/svgIcons/SvgData';
 import { DrawerActions, useNavigation } from '@react-navigation/native';
 import { styles } from './StyleHome';
+import { ComponentImage } from '../../commonComponents/ComponentImage/ComponentImage';
 
 const ScreenHome = () => {
   const navigation=useNavigation()
@@ -13,6 +14,7 @@ const ScreenHome = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ComponentHeader title='home page' leftIcon={<Icons.MenuIcon/>} onIconPress={handleDrawer}/>
+      <ComponentImage />
       <View style={styles.content}>
         <Text style={styles.text}>Home</Text>
       </View>

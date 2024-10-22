@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from "../../theme/theme";
 
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#f8f8f8', // Set a background color for the safe area
+      backgroundColor: COLORS.buttonTextWhite, 
     },
     content: {
       flex: 1,
