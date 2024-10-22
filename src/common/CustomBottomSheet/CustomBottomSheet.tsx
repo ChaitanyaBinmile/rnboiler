@@ -1,12 +1,9 @@
 import {CustomBottomSheetProps} from './type';
-import {Modal, View, Text, TouchableOpacity} from 'react-native';
-import {styles} from './StyleCustomBottomSheet';
-import english from '../../assets/lang/English/LangEnglish';
-import { Children } from 'react';
+import {Modal, View} from 'react-native';
 const CustomBottomSheet: React.FC<CustomBottomSheetProps> = ({
   visible,
   onClose,
-  cutomBottomStyles,
+  customBottomStyles,
   transparent,
   children,
 }) => {
@@ -16,6 +13,7 @@ const CustomBottomSheet: React.FC<CustomBottomSheetProps> = ({
       visible={visible}
       animationType="slide"
       onRequestClose={onClose}>
+
       <View style={cutomBottomStyles}>
         {/* <View
           style={[
@@ -36,6 +34,7 @@ const CustomBottomSheet: React.FC<CustomBottomSheetProps> = ({
         
         {children}
       </View>
+
     </Modal>
   );
 };
