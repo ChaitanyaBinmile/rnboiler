@@ -33,6 +33,7 @@ const CustomBottomSheet: React.FC<CustomBottomSheetProps> = ({
             </Text>
           </TouchableOpacity>
         </View> */}
+        
         {children}
       </View>
     </Modal>
