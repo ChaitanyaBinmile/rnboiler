@@ -26,7 +26,6 @@ const CustomDateTimeFormat: React.FC<CustomDateTimeProps> = ({ date, utcdate }) 
       const convertedEpoch = convertToEpoch(utcdate);
       if (convertedEpoch) {
         setEpochConverted(convertedEpoch);
-        // const isoString = new Date(utcdate).toISOString();
         setErrorMessage(null); 
       } else {
         setErrorMessage(english.ERROR_MESSAGE);

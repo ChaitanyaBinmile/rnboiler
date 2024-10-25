@@ -32,7 +32,11 @@ const tamil: LangTypes = {
   DATETIME_UTC_FUNCTION: '',
   SUBMIT: '',
   DATETIME_ISO_FUNCTION: '',
-  ERROR_MESSAGE:'',
+  ERROR_MESSAGE: '',
+  STATUSBAR_SCREEN1: '',
+  STATUSBAR_SCREEN2: '',
+  CAMERA_TEXT: '',
+  GALLEXY_TEXT: ''
 };
 
 export default tamil;

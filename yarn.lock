@@ -6100,10 +6100,20 @@ react-native-gesture-handler@^2.20.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-image-picker@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-7.1.2.tgz#383849d1953caf4578874a1f5e5dd11c737bd5cd"
+  integrity sha512-b5y5nP60RIPxlAXlptn2QwlIuZWCUDWa/YPUVjgHc0Ih60mRiOg1PSzf0IjHSLeOZShCpirpvSPGnDExIpTRUg==
+
 react-native-network-logger@1.17.0:
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/react-native-network-logger/-/react-native-network-logger-1.17.0.tgz#09c337f39e84dc74b84f1b2b978a0ed46bbc1a25"
   integrity sha512-FXiUH9hMnuBhhRrj88k0nMDUKvAJoS49P/E05L/MGjfD/iI15UktGsTutCAPkstXtqxctnNhAjYER7DXbiUf8w==
+
+react-native-permissions@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-5.0.2.tgz#1d6127287fba740ee61225391aed90514ea77956"
+  integrity sha512-CsL0jSGTJZET/Mq5l14ZcemQtPSj1Ru6LLO/J/T5RUQKwu9PavJqun7LX2te6yQ0tUoi+lA/etRHpggRVW+o0A==
 
 react-native-reanimated@^3.15.5:
   version "3.16.0"
@@ -6161,6 +6171,11 @@ react-native-vector-icons@10.2.0:
   dependencies:
     prop-types "^15.7.2"
     yargs "^16.1.1"
+
+react-native-video@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-6.7.0.tgz#0fa3dc1a3274a07ac66740cbbb85dad36325ef93"
+  integrity sha512-9516km2AorwEbeJtpODCeZa7BJGYxoMtyArzZANqCWLioNJPWAbZJjbWp+JIKnoXvb/qniNuTJ1989Zdohc8XQ==
 
 react-native@0.75.3:
   version "0.75.3"

@@ -1,0 +1,90 @@
+import { Option } from "../../../common/CustomDropDown/type";
+export const fields = [
+    {
+      name: 'singleLineText',
+      label: 'Single-line Text',
+      placeholder: 'Enter text',
+      required: true,
+      keyboardType: 'default' as const,
+    },
+    {
+      name: 'multiLineText',
+      label: 'Address',
+      placeholder: 'Enter multi-line text',
+      required: true,
+      multiline: true,
+    },
+    {
+        name: 'country',
+        label: 'Country',
+        placeholder: 'Enter Country',
+        required: true,
+      },
+      {
+        name: 'state',
+        label: 'State',
+        placeholder: 'Enter State',
+        required: true,
+      },
+      {
+        name: 'houseNumber',
+        label: 'House Number',
+        placeholder: 'Enter houseNumber',
+        required: true,
+      },
+      {
+        name: 'location',
+        label: 'Land Mark',
+        placeholder: 'Enter Nearnest Land Mark',
+        required: true,
+      },
+    {
+      name: 'email',
+      label: 'Email',
+      placeholder: 'Enter your email',
+      required: true,
+      keyboardType: 'email-address' as const,
+    },
+    {
+      name: 'password',
+      label: 'Password',
+      placeholder: 'Enter your password',
+      required: true,
+      secureTextEntry: true,
+    },
+    {
+      name: 'url',
+      label: 'URL',
+      placeholder: 'Enter URL',
+      required: true,
+      keyboardType: 'url' as const,
+    },
+    {
+      name: 'phoneNumber',
+      label: 'Phone Number',
+      placeholder: 'Enter phone number',
+      required: true,
+    },
+    {
+      name: 'postalCode',
+      label: 'Postal Code',
+      placeholder: 'Enter a Postal Code',
+      required: true,
+      keyboardType: 'default' as const,
+    },
+     {
+      name: 'date',
+      label: 'Date of Birth',
+      placeholder: '2020-01-01',
+      required: true,
+      keyboardType: 'default' as const,
+    },
+    {
+      name: 'range',
+      label: 'Range',
+      placeholder: '10-100',
+      required: true,
+      keyboardType: 'numeric' as const,
+    },
+  
+  ];

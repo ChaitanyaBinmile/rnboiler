@@ -33,6 +33,10 @@ const english: LangTypes = {
   SUBMIT: 'Submit',
   DATETIME_ISO_FUNCTION: 'ISO Format:',
   ERROR_MESSAGE: 'Please enter correct format',
+  STATUSBAR_SCREEN1: 'Products Screen',
+  STATUSBAR_SCREEN2: 'Home Screen',
+  CAMERA_TEXT: 'Open Camera',
+  GALLEXY_TEXT: 'Open Gallery',
 };
 
 export default english;

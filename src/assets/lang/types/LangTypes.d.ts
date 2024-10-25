@@ -31,4 +31,8 @@ export interface LangTypes {
   SUBMIT:string,
   DATETIME_ISO_FUNCTION:string,
   ERROR_MESSAGE:string,
+  STATUSBAR_SCREEN1:string,
+  STATUSBAR_SCREEN2:string,
+  CAMERA_TEXT:string,
+  GALLEXY_TEXT:string,
 }
