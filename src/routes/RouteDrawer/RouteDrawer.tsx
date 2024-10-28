@@ -10,11 +10,11 @@ function RouteDrawer() {
   const DrawerStack = createDrawerNavigator<DrawerStackParamList>();
   return (
     <DrawerStack.Navigator
-    initialRouteName={DrawerRoute.BottomTabStack}
+      initialRouteName={DrawerRoute.BottomTabStack}
       screenOptions={{
         headerShown: false,
       }}>
-        <DrawerStack.Screen name={DrawerRoute.HOMES} component={ScreenHome} />
+      <DrawerStack.Screen name={DrawerRoute.HOMES} component={ScreenHome} />
       <DrawerStack.Screen
         name={DrawerRoute.ScreenFirstDrawer}
         component={ScreenFirstDrawer}
@@ -23,7 +23,7 @@ function RouteDrawer() {
         name={DrawerRoute.ScreenSecondDrawer}
         component={ScreenSecondDrawer}
       />
-    <DrawerStack.Screen
+      <DrawerStack.Screen
         name={DrawerRoute.BottomTabStack}
         component={BottomTabs}
       />
