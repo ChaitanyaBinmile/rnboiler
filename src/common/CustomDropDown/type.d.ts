@@ -14,12 +14,14 @@ export interface DropdownProps {
   placeholder: string;
   label: string;
   disabled?: boolean;
-  error?: string | undefined; 
-  multiple?: boolean;
+  error?: FieldError | string;
+   multiple?: boolean;
   clearable?: boolean; 
   required?: boolean;
   style?: StyleProp<ViewStyle>;        
   inputStyle?: StyleProp<TextStyle>;  
   dropdownStyle?: StyleProp<ViewStyle>; 
   errorStyle?: StyleProp<TextStyle>;   
+  value?: string; 
+  onChange?: (value: string) => void;
 }

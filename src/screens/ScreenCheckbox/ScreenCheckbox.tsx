@@ -31,6 +31,7 @@ const ScreenCheckBox: React.FC = () => {
       checkStyle={styles.checkOption}
       errorStyle={styles.errorText}
       />
+      
         <CustomCheckBox
       options={options2}
       placeholder={english.CHECKBOX_SINGLE_PLACEHOLDER}

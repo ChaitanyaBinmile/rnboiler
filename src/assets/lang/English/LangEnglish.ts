@@ -27,7 +27,16 @@ const english: LangTypes = {
   AUTOCOMPLETE_LABEL: "Choose an option",
   BOTTOMSHEET_TEXT: 'Dummy Text',
   BOTTOMSHEET_BUTTONTEXT: 'Close',
-  BOTTOMSHEET_ONCLICKBUTTONTEXT: 'Open BottomSheet'
+  BOTTOMSHEET_ONCLICKBUTTONTEXT: 'Open BottomSheet',
+  DATETIME_EPOCH_FUNCTION: 'Formatted Date (from Epoch):',
+  DATETIME_UTC_FUNCTION: 'Converted Epoch (from UTC):',
+  SUBMIT: 'Submit',
+  DATETIME_ISO_FUNCTION: 'ISO Format:',
+  ERROR_MESSAGE: 'Please enter correct format',
+  STATUSBAR_SCREEN1: 'Products Screen',
+  STATUSBAR_SCREEN2: 'Home Screen',
+  CAMERA_TEXT: 'Open Camera',
+  GALLEXY_TEXT: 'Open Gallery',
 };
 
 export default english;
